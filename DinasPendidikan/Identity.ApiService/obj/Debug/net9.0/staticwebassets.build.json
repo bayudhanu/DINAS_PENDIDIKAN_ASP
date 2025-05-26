@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "NODCJb5Wfutu4GQQuq0xKg9l8+TwsD5e49a4KrL/+DA=",
+  "Source": "Identity.ApiService",
+  "BasePath": "_content/Identity.ApiService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

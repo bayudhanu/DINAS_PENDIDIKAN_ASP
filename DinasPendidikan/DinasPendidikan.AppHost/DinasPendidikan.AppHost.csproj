@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>087ad92b-d543-45b7-be24-e6ef8cee03d7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DinasPendidikan.ApiService\DinasPendidikan.ApiService.csproj" />
+    <ProjectReference Include="..\DinasPendidikan.Web\DinasPendidikan.Web.csproj" />
+    <ProjectReference Include="..\Identity.ApiService\Identity.ApiService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.2" />
+  </ItemGroup>
+
+</Project>

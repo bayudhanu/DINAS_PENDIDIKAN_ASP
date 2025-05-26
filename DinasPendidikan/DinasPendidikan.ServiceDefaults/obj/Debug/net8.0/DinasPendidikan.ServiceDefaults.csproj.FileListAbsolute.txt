@@ -1,0 +1,12 @@
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\bin\Debug\net8.0\DinasPendidikan.ServiceDefaults.deps.json
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\bin\Debug\net8.0\DinasPendidikan.ServiceDefaults.dll
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\bin\Debug\net8.0\DinasPendidikan.ServiceDefaults.pdb
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\obj\Debug\net8.0\DinasPendidikan.ServiceDefaults.csproj.AssemblyReference.cache
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\obj\Debug\net8.0\DinasPendidikan.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\obj\Debug\net8.0\DinasPendidikan.ServiceDefaults.AssemblyInfoInputs.cache
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\obj\Debug\net8.0\DinasPendidikan.ServiceDefaults.AssemblyInfo.cs
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\obj\Debug\net8.0\DinasPendidikan.ServiceDefaults.csproj.CoreCompileInputs.cache
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\obj\Debug\net8.0\DinasPendidikan.ServiceDefaults.dll
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\obj\Debug\net8.0\refint\DinasPendidikan.ServiceDefaults.dll
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\obj\Debug\net8.0\DinasPendidikan.ServiceDefaults.pdb
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ServiceDefaults\obj\Debug\net8.0\ref\DinasPendidikan.ServiceDefaults.dll

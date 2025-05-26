@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3508729B-6CFC-A8C2-CFB5-146F2B60C372}|DinasPendidikan.ApiService\\DinasPendidikan.ApiService.csproj|d:\\github\\dinas_pendidikan\\dinaspendidikan\\dinaspendidikan.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3508729B-6CFC-A8C2-CFB5-146F2B60C372}|DinasPendidikan.ApiService\\DinasPendidikan.ApiService.csproj|solutionrelative:dinaspendidikan.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B2BC32B-A25C-19F0-0F44-F212A0EFE100}|DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj|d:\\github\\dinas_pendidikan\\dinaspendidikan\\dinaspendidikan.servicedefaults\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B2BC32B-A25C-19F0-0F44-F212A0EFE100}|DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj|solutionrelative:dinaspendidikan.servicedefaults\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\Extensions.cs",
+              "RelativeDocumentMoniker": "DinasPendidikan.ServiceDefaults\\Extensions.cs",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\Extensions.cs",
+              "RelativeToolTip": "DinasPendidikan.ServiceDefaults\\Extensions.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAYwGcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T03:06:20.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ApiService\\Program.cs",
+              "RelativeDocumentMoniker": "DinasPendidikan.ApiService\\Program.cs",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ApiService\\Program.cs",
+              "RelativeToolTip": "DinasPendidikan.ApiService\\Program.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T02:54:34.317Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

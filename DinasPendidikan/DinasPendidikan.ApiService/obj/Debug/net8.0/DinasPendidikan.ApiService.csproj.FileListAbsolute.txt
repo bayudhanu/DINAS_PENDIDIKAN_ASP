@@ -1,0 +1,7 @@
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\DinasPendidikan.ApiService.csproj.AssemblyReference.cache
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\DinasPendidikan.ApiService.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\DinasPendidikan.ApiService.AssemblyInfoInputs.cache
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\DinasPendidikan.ApiService.AssemblyInfo.cs
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\DinasPendidikan.ApiService.csproj.CoreCompileInputs.cache
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\DinasPendidikan.ApiService.MvcApplicationPartsAssemblyInfo.cs
+D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\DinasPendidikan.ApiService.MvcApplicationPartsAssemblyInfo.cache
