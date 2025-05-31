@@ -228,7 +228,6 @@ D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.ApiService\obj\De
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.DinasPendidikan.ApiService.props
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.DinasPendidikan.ApiService.props
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\DinasPen.8F8C358D.Up2Date
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\DinasPendidikan.ApiService.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.ApiService\obj\Debug\net8.0\refint\DinasPendidikan.ApiService.dll

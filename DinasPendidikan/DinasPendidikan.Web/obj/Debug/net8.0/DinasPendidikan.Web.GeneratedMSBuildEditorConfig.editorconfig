@@ -32,12 +32,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYXNoYm9hcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Github/DINAS_PENDIDIKAN_ASP/DinasPendidikan/DinasPendidikan.Web/Components/Pages/Disposisi/DisposisiIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEaXNwb3Npc2lcRGlzcG9zaXNpSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/DINAS_PENDIDIKAN_ASP/DinasPendidikan/DinasPendidikan.Web/Components/Pages/DokumenRegulasi/DokumenRegulasiIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEb2t1bWVuUmVndWxhc2lcRG9rdW1lblJlZ3VsYXNpSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Github/DINAS_PENDIDIKAN_ASP/DinasPendidikan/DinasPendidikan.Web/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Github/DINAS_PENDIDIKAN_ASP/DinasPendidikan/DinasPendidikan.Web/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/DINAS_PENDIDIKAN_ASP/DinasPendidikan/DinasPendidikan.Web/Components/Pages/SuratKeluar/SuratKeluarIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTdXJhdEtlbHVhclxTdXJhdEtlbHVhckluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Github/DINAS_PENDIDIKAN_ASP/DinasPendidikan/DinasPendidikan.Web/Components/Pages/SuratMasuk/SuratMasukIndex.razor]

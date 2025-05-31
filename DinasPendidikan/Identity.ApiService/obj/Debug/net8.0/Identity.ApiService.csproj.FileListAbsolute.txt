@@ -112,7 +112,6 @@ D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\Identity.ApiService\obj\Debug\net
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\Identity.ApiService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Identity.ApiService.props
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\Identity.ApiService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Identity.ApiService.props
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\Identity.ApiService\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\Identity.ApiService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\Identity.ApiService\obj\Debug\net8.0\Identity.0E274E61.Up2Date
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\Identity.ApiService\obj\Debug\net8.0\Identity.ApiService.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\Identity.ApiService\obj\Debug\net8.0\refint\Identity.ApiService.dll

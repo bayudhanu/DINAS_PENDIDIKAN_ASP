@@ -5,24 +5,24 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DinasPendidikan.Database;
 
-public class DinasPendidikanDbContext: DbContext
+public class DinasPendidikanDbContext : DbContext
 {
-    public DinasPendidikanDbContext(DbContextOptions<DinasPendidikanDbContext> options) : base(options) {}
+    public DinasPendidikanDbContext(DbContextOptions<DinasPendidikanDbContext> options) : base(options) { }
 
     // Tabel-tabel utama
     public DbSet<User> Users { get; set; }
     public DbSet<Role> Roles { get; set; }
-    public DbSet<UserRole> UserRoles { get; set; } = null;
-    public DbSet<Document> Documents { get; set; } = null;
-    public DbSet<DocumentType> DocumentTypes { get; set; } = null;
-    public DbSet<DocumentAttachment> DocumentAttachments { get; set; } = null;
-    public DbSet<InventoryItem> InventoryItems { get; set; } = null;
-    public DbSet<InventoryCategory> InventoryCategories { get; set; } = null;
-    public DbSet<InventoryTransaction> InventoryTransactions { get; set; } = null;
+    public DbSet<UserRole> UserRoles { get; set; }
+    public DbSet<Document> Documents { get; set; }
+    public DbSet<DocumentType> DocumentTypes { get; set; }
+    public DbSet<DocumentAttachment> DocumentAttachments { get; set; }
+    public DbSet<InventoryItem> InventoryItems { get; set; }
+    public DbSet<InventoryCategory> InventoryCategories { get; set; }
+    public DbSet<InventoryTransaction> InventoryTransactions { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
+        //base.OnModelCreating(modelBuilder);
 
         // User-Role many-to-many
         modelBuilder.Entity<UserRole>()
@@ -39,7 +39,7 @@ public class DinasPendidikanDbContext: DbContext
             .HasForeignKey(ur => ur.RoleId);
 
         // Seed data awal
-        SeedInitialData(modelBuilder);
+        //SeedInitialData(modelBuilder);
     }
 
     private void SeedInitialData(ModelBuilder modelBuilder)
@@ -68,18 +68,29 @@ public class DinasPendidikanDbContext: DbContext
             new UserRole { UserId = 1, RoleId = 1 }
         );
 
-        // Seed document types
-        modelBuilder.Entity<DocumentType>().HasData(
-            new DocumentType { Name = "Surat Masuk", Code = "SM", Description = "Dokumen surat masuk" },
-            new DocumentType { Name = "Surat Keluar", Code = "SK", Description = "Dokumen surat keluar" },
-            new DocumentType { Name = "Surat Keputusan", Code = "SKEP", Description = "Dokumen surat keputusan" }
-        );
+        modelBuilder.Entity<DocumentType>(entity =>
+        {
+            entity.HasKey(e => e.Id); // Set Id sebagai primary key
+            entity.Property(e => e.Id)
+                  .ValueGeneratedOnAdd(); // Config as identity column
+
+            entity.Property(e => e.Name)
+                  .IsRequired()
+                  .HasMaxLength(100);
+
+            // Seed document types
+            modelBuilder.Entity<DocumentType>().HasData(
+                new DocumentType { Name = "Surat Masuk", Code = "SM", Description = "Dokumen surat masuk" },
+                new DocumentType { Name = "Surat Keluar", Code = "SK", Description = "Dokumen surat keluar" },
+                new DocumentType { Name = "Surat Keputusan", Code = "SKEP", Description = "Dokumen surat keputusan" }
+            );
+        });
 
         // Seed inventory categories
         modelBuilder.Entity<InventoryCategory>().HasData(
-            new InventoryCategory { Name = "Elektronik", Description = "Perangkat elektronik" },
-            new InventoryCategory { Name = "Furniture", Description = "Perabot kantor" },
-            new InventoryCategory { Name = "Kendaraan", Description = "Kendaraan dinas" }
-        );
+        new InventoryCategory { Name = "Elektronik", Description = "Perangkat elektronik" },
+        new InventoryCategory { Name = "Furniture", Description = "Perabot kantor" },
+        new InventoryCategory { Name = "Kendaraan", Description = "Kendaraan dinas" }
+    );
     }
 }
