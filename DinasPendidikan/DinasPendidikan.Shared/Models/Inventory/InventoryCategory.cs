@@ -10,6 +10,7 @@ namespace DinasPendidikan.Shared.Models.Inventory
 {
     public class InventoryCategory : BaseModel
     {
+     
         [Required]
         [MaxLength(50)]
         public string Name { get; set; } = string.Empty;
@@ -17,7 +18,5 @@ namespace DinasPendidikan.Shared.Models.Inventory
         [MaxLength(200)]
         public string? Description { get; set; }
 
-        // Navigation properties
-        public ICollection<InventoryItem> Items { get; set; } = new List<InventoryItem>();
     }
 }

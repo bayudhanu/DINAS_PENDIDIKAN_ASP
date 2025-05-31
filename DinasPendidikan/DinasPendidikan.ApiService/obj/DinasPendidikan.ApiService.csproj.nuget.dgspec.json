@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ApiService\\DinasPendidikan.ApiService.csproj": {}
+    "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ApiService\\DinasPendidikan.ApiService.csproj": {}
   },
   "projects": {
-    "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ApiService\\DinasPendidikan.ApiService.csproj": {
+    "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ApiService\\DinasPendidikan.ApiService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ApiService\\DinasPendidikan.ApiService.csproj",
+        "projectUniqueName": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ApiService\\DinasPendidikan.ApiService.csproj",
         "projectName": "DinasPendidikan.ApiService",
-        "projectPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ApiService\\DinasPendidikan.ApiService.csproj",
+        "projectPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ApiService\\DinasPendidikan.ApiService.csproj",
         "packagesPath": "C:\\Users\\ASUST\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ApiService\\obj\\",
+        "outputPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ApiService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj": {
-                "projectPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj"
+              "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj": {
+                "projectPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj"
               },
-              "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj": {
-                "projectPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj"
+              "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj": {
+                "projectPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj"
               }
             }
           }
@@ -61,6 +61,10 @@
             "Aspire.Hosting": {
               "target": "Package",
               "version": "[9.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.16, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -94,14 +98,14 @@
         }
       }
     },
-    "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj": {
+    "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj",
+        "projectUniqueName": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj",
         "projectName": "DinasPendidikan.Database",
-        "projectPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj",
+        "projectPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj",
         "packagesPath": "C:\\Users\\ASUST\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Database\\obj\\",
+        "outputPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -123,8 +127,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj": {
-                "projectPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj"
+              "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj": {
+                "projectPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj"
               }
             }
           }
@@ -154,6 +158,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -176,14 +192,14 @@
         }
       }
     },
-    "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj": {
+    "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj",
+        "projectUniqueName": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj",
         "projectName": "DinasPendidikan.ServiceDefaults",
-        "projectPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj",
+        "projectPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj",
         "packagesPath": "C:\\Users\\ASUST\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\obj\\",
+        "outputPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -275,14 +291,14 @@
         }
       }
     },
-    "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj": {
+    "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj",
+        "projectUniqueName": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj",
         "projectName": "DinasPendidikan.Shared",
-        "projectPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj",
+        "projectPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj",
         "packagesPath": "C:\\Users\\ASUST\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Shared\\obj\\",
+        "outputPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -10,7 +10,7 @@ namespace DinasPendidikan.Shared.Models.Documents
 {
     public class DocumentType : BaseModel
     {
-        [Required]
+
         [MaxLength(50)]
         public string Name { get; set; } = string.Empty;
 
@@ -20,7 +20,5 @@ namespace DinasPendidikan.Shared.Models.Documents
         [MaxLength(200)]
         public string? Description { get; set; }
 
-        // Navigation properties
-        public ICollection<Document> Documents { get; set; } = new List<Document>();
     }
 }

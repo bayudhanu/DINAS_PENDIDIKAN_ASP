@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b/HqyaiOVCY=",
+  "dgSpecHash": "/hySpxADFK8=",
   "success": true,
-  "projectFilePath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj",
+  "projectFilePath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUST\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.16\\microsoft.aspnetcore.authorization.8.0.16.nupkg.sha512",
     "C:\\Users\\ASUST\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.16\\microsoft.aspnetcore.components.8.0.16.nupkg.sha512",

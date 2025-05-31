@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a1fEFr5pCXE=",
+  "dgSpecHash": "fqGkHbLaM+M=",
   "success": true,
-  "projectFilePath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj",
+  "projectFilePath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUST\\.nuget\\packages\\google.protobuf\\3.22.5\\google.protobuf.3.22.5.nupkg.sha512",
     "C:\\Users\\ASUST\\.nuget\\packages\\grpc.core.api\\2.52.0\\grpc.core.api.2.52.0.nupkg.sha512",

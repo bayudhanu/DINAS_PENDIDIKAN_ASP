@@ -8,5 +8,5 @@ namespace Projects;
 public class DinasPendidikan_AppHost
 {
     private DinasPendidikan_AppHost() { }
-    public static string ProjectPath => """D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.AppHost""";
+    public static string ProjectPath => """D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost""";
 }

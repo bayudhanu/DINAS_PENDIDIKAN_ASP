@@ -10,7 +10,7 @@ namespace DinasPendidikan.Shared.Models.Inventory
 {
     public class InventoryItem : BaseModel
     {
-        [Required]
+
         [MaxLength(20)]
         public string ItemCode { get; set; } = string.Empty;
 

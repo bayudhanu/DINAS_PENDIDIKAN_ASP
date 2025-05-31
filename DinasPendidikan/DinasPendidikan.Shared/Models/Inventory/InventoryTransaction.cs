@@ -10,6 +10,7 @@ namespace DinasPendidikan.Shared.Models.Inventory
 {
     public class InventoryTransaction : BaseUserTrackedModel
     {
+       
         [Required]
         public int ItemId { get; set; }
         public InventoryItem Item { get; set; } = null!;

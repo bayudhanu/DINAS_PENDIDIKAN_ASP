@@ -7,5 +7,5 @@ namespace Projects;
 [global::System.Diagnostics.DebuggerDisplay("Type = {GetType().Name,nq}, ProjectPath = {ProjectPath}")]
 public class DinasPendidikan_Web : global::Aspire.Hosting.IProjectMetadata
 {
-    public string ProjectPath => """D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.Web\DinasPendidikan.Web.csproj""";
+    public string ProjectPath => """D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Web\DinasPendidikan.Web.csproj""";
 }

@@ -16,8 +16,5 @@ namespace DinasPendidikan.Shared.Models.Users
 
         [MaxLength(200)]
         public string Description { get; set; } = string.Empty;
-
-        // Navigation properties
-        public ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
     }
 }

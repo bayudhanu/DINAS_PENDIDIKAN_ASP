@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\Identity.ApiService\\Identity.ApiService.csproj": {}
+    "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\Identity.ApiService\\Identity.ApiService.csproj": {}
   },
   "projects": {
-    "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\Identity.ApiService\\Identity.ApiService.csproj": {
+    "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\Identity.ApiService\\Identity.ApiService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\Identity.ApiService\\Identity.ApiService.csproj",
+        "projectUniqueName": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\Identity.ApiService\\Identity.ApiService.csproj",
         "projectName": "Identity.ApiService",
-        "projectPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\Identity.ApiService\\Identity.ApiService.csproj",
+        "projectPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\Identity.ApiService\\Identity.ApiService.csproj",
         "packagesPath": "C:\\Users\\ASUST\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\Identity.ApiService\\obj\\",
+        "outputPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\Identity.ApiService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="wwwroot\assets\compiled\" />
+		<Folder Include="wwwroot\assets\css\" />
+		<Folder Include="wwwroot\assets\extensions\" />
+		<Folder Include="wwwroot\assets\extensions\apexcharts\" />
+		<Folder Include="wwwroot\assets\images\" />
+		<Folder Include="wwwroot\assets\js\" />
+		<Folder Include="wwwroot\assets\static\" />
+		<Folder Include="wwwroot\assets\vendors\" />
+	</ItemGroup>
+
+</Project>

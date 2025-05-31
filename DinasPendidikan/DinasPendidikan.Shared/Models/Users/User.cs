@@ -12,6 +12,7 @@ namespace DinasPendidikan.Shared.Models.Users
 {
     public class User : BaseModel
     {
+       
         [Required]
         [MaxLength(50)]
         public string Username { get; set; } = string.Empty;
@@ -29,9 +30,5 @@ namespace DinasPendidikan.Shared.Models.Users
         public bool IsActive { get; set; } = true;
         public DateTime? LastLogin { get; set; }
 
-        // Navigation properties
-        public ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
-        public ICollection<Document> CreatedDocuments { get; set; } = new List<Document>();
-        public ICollection<InventoryTransaction> InventoryTransactions { get; set; } = new List<InventoryTransaction>();
     }
 }

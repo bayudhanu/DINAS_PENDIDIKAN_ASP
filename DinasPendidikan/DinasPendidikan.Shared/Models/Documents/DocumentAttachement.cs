@@ -10,7 +10,6 @@ namespace DinasPendidikan.Shared.Models.Documents
 {
     public class DocumentAttachment : BaseModel
     {
-        [Required]
         public int DocumentId { get; set; }
         public Document Document { get; set; } = null!;
 

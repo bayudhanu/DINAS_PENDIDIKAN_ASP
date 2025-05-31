@@ -10,3 +10,16 @@ D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8
 D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\refint\DinasPendidikan.Shared.dll
 D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\DinasPendidikan.Shared.pdb
 D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\ref\DinasPendidikan.Shared.dll
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\bin\Debug\net8.0\DinasPendidikan.Shared.deps.json
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\bin\Debug\net8.0\DinasPendidikan.Shared.dll
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\bin\Debug\net8.0\DinasPendidikan.Shared.pdb
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\DinasPendidikan.Shared.csproj.AssemblyReference.cache
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\DinasPendidikan.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\DinasPendidikan.Shared.AssemblyInfoInputs.cache
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\DinasPendidikan.Shared.AssemblyInfo.cs
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\DinasPendidikan.Shared.csproj.CoreCompileInputs.cache
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\DinasPendidikan.Shared.sourcelink.json
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\DinasPendidikan.Shared.dll
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\refint\DinasPendidikan.Shared.dll
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\DinasPendidikan.Shared.pdb
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Shared\obj\Debug\net8.0\ref\DinasPendidikan.Shared.dll

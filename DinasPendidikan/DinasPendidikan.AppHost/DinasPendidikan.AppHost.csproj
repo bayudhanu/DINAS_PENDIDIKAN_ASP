@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DinasPendidikan.ApiService\DinasPendidikan.ApiService.csproj" />
     <ProjectReference Include="..\DinasPendidikan.Web\DinasPendidikan.Web.csproj" />
+    <ProjectReference Include="..\DinasPendidikanDokumenService\DinasPendidikanDokumenService.csproj" />
     <ProjectReference Include="..\Identity.ApiService\Identity.ApiService.csproj" />
   </ItemGroup>
 

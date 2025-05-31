@@ -11,7 +11,7 @@ namespace DinasPendidikan.Shared.Models.Documents
 {
     public class Document : BaseUserTrackedModel
     {
-        [Required]
+
         [MaxLength(50)]
         public string DocumentNumber { get; set; } = string.Empty;
 

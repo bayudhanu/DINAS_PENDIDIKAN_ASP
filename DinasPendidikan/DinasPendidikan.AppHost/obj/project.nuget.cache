@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TrAb8/jfYww=",
+  "dgSpecHash": "g8M23LzxdUQ=",
   "success": true,
-  "projectFilePath": "D:\\Github\\DINAS_PENDIDIKAN\\DinasPendidikan\\DinasPendidikan.AppHost\\DinasPendidikan.AppHost.csproj",
+  "projectFilePath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.AppHost\\DinasPendidikan.AppHost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUST\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\8.2.2\\aspire.dashboard.sdk.win-x64.8.2.2.nupkg.sha512",
     "C:\\Users\\ASUST\\.nuget\\packages\\aspire.hosting\\8.2.2\\aspire.hosting.8.2.2.nupkg.sha512",

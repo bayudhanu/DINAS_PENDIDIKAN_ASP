@@ -1,0 +1,24 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
+using System.IO;
+
+namespace DinasPendidikan.Database
+{
+    public class DinasPendidikanDbContextFactory : IDesignTimeDbContextFactory<DinasPendidikanDbContext>
+    {
+        public DinasPendidikanDbContext CreateDbContext(string[] args)
+        {
+            // Baca konfigurasi dari appsettings.json
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
+
+            var optionsBuilder = new DbContextOptionsBuilder<DinasPendidikanDbContext>();
+            optionsBuilder.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
+
+            return new DinasPendidikanDbContext(optionsBuilder.Options);
+        }
+    }
+}
