@@ -1,5 +1,11 @@
-﻿@page "/surat-masuk"
+﻿@page "/surat-masuk/Index"
 
+@page "/surat-masuk/edit/{id:int}"
+@using DocumentManagementSystem.Models
+@using DocumentManagementSystem.Services
+@inject ISuratMasukService SuratMasukService
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.Components.Forms
 <!DOCTYPE html>
 <html lang="id">
 <head>  
@@ -217,6 +223,9 @@
 
     <!-- Modal Tambah Surat -->
     <div class="modal fade" id="tambahSuratModal" tabindex="-1" aria-labelledby="tambahSuratModalLabel" aria-hidden="true">
+        <EditForm Model="@suratMasuk" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -282,10 +291,11 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                    <button type="button" class="btn btn-primary">Simpan Surat</button>
+                    <button type="submit" class="btn btn-primary">Simpan Surat</button>
                 </div>
             </div>
         </div>
+        </EditForm>
     </div>
 
 
@@ -441,5 +451,37 @@
 </html>
 
 @code {
+    [Parameter]
+    public int Id { get; set; }
 
+    private SuratMasuk suratMasuk = new SuratMasuk();
+    private string Title = "Tambah Surat Masuk Baru";
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id > 0)
+        {
+            Title = "Edit Surat Masuk";
+            suratMasuk = await SuratMasukService.GetById(Id) ?? new SuratMasuk();
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if (Id > 0)
+        {
+            await SuratMasukService.Update(suratMasuk);
+        }
+        else
+        {
+            await SuratMasukService.Create(suratMasuk);
+        }
+
+        NavigationManager.NavigateTo("/surat-masuk");
+    }
+
+    private void Batal()
+    {
+        NavigationManager.NavigateTo("/surat-masuk");
+    }
 }

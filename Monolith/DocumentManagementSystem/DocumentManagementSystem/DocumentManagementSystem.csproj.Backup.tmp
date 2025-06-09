@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Data\" />
+		<Folder Include="Respositories\" />
+		<Folder Include="Services\" />
+		<Folder Include="wwwroot\compiled\" />
+		<Folder Include="wwwroot\css\" />
+		<Folder Include="wwwroot\extensions\" />
+		<Folder Include="wwwroot\extensions\apexcharts\" />
+		<Folder Include="wwwroot\images\" />
+		<Folder Include="wwwroot\js\" />
+		<Folder Include="wwwroot\static\" />
+		<Folder Include="wwwroot\vendors\" />
+	</ItemGroup>
+
+</Project>

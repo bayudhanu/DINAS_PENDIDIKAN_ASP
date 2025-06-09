@@ -15,6 +15,7 @@ D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.Database\obj\Debug\ne
 D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.Database\obj\Debug\net8.0\DinasPendidikan.Database.pdb
 D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.Database\obj\Debug\net8.0\DinasPendidikan.Database.genruntimeconfig.cache
 D:\Github\DINAS_PENDIDIKAN\DinasPendidikan\DinasPendidikan.Database\obj\Debug\net8.0\ref\DinasPendidikan.Database.dll
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\obj\Debug\net8.0\DinasPendidikan.Database.GeneratedMSBuildEditorConfig.editorconfig
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\bin\Debug\net8.0\DinasPendidikan.Database.deps.json
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\bin\Debug\net8.0\DinasPendidikan.Database.runtimeconfig.json
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\bin\Debug\net8.0\DinasPendidikan.Database.dll
@@ -22,7 +23,6 @@ D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\bin\Debu
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\bin\Debug\net8.0\DinasPendidikan.Shared.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\bin\Debug\net8.0\DinasPendidikan.Shared.pdb
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\obj\Debug\net8.0\DinasPendidikan.Database.csproj.AssemblyReference.cache
-D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\obj\Debug\net8.0\DinasPendidikan.Database.GeneratedMSBuildEditorConfig.editorconfig
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\obj\Debug\net8.0\DinasPendidikan.Database.AssemblyInfoInputs.cache
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\obj\Debug\net8.0\DinasPendidikan.Database.AssemblyInfo.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.Database\obj\Debug\net8.0\DinasPendidikan.Database.csproj.CoreCompileInputs.cache

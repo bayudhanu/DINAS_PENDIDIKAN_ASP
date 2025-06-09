@@ -7,14 +7,28 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="wwwroot\assets\compiled\" />
-		<Folder Include="wwwroot\assets\css\" />
-		<Folder Include="wwwroot\assets\extensions\" />
-		<Folder Include="wwwroot\assets\extensions\apexcharts\" />
-		<Folder Include="wwwroot\assets\images\" />
-		<Folder Include="wwwroot\assets\js\" />
-		<Folder Include="wwwroot\assets\static\" />
-		<Folder Include="wwwroot\assets\vendors\" />
+		<Folder Include="wwwroot\compiled\" />
+		<Folder Include="wwwroot\css\" />
+		<Folder Include="wwwroot\extensions\" />
+		<Folder Include="wwwroot\extensions\apexcharts\" />
+		<Folder Include="wwwroot\images\" />
+		<Folder Include="wwwroot\js\" />
+		<Folder Include="wwwroot\static\" />
+		<Folder Include="wwwroot\vendors\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Repositories\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.16" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.5" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.5">
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	    <PrivateAssets>all</PrivateAssets>
+	  </PackageReference>
 	</ItemGroup>
 
 </Project>

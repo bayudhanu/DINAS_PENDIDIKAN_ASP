@@ -1,0 +1,105 @@
+﻿@page "/surat-masuk/tambah"
+@page "/surat-masuk/edit/{id:int}"
+@using DocumentManagementSystem.Models
+@using DocumentManagementSystem.Services
+@inject ISuratMasukService SuratMasukService
+@inject NavigationManager NavigationManager
+
+<h3>@Title</h3>
+
+<EditForm Model="@suratMasuk" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="nomorSurat">Nomor Surat</label>
+        <InputText id="nomorSurat" class="form-control" @bind-Value="suratMasuk.NomorSurat" />
+    </div>
+
+    <div class="form-group">
+        <label for="perihal">Perihal</label>
+        <InputText id="perihal" class="form-control" @bind-Value="suratMasuk.Perihal" />
+    </div>
+
+    <div class="form-group">
+        <label for="isiSurat">Isi Surat</label>
+        <InputTextArea id="isiSurat" class="form-control" @bind-Value="suratMasuk.IsiSurat" />
+    </div>
+
+    <div class="form-group">
+        <label for="tanggalSurat">Tanggal Surat</label>
+        <InputDate id="tanggalSurat" class="form-control" @bind-Value="suratMasuk.TanggalSurat" />
+    </div>
+
+    <div class="form-group">
+        <label for="asalSurat">Asal Surat</label>
+        <InputText id="asalSurat" class="form-control" @bind-Value="suratMasuk.AsalSurat" />
+    </div>
+
+    <div class="form-group">
+        <label for="tujuanSurat">Tujuan Surat</label>
+        <InputText id="tujuanSurat" class="form-control" @bind-Value="suratMasuk.TujuanSurat" />
+    </div>
+
+    <div class="form-group">
+        <label for="sifatSurat">Sifat Surat</label>
+        <InputText id="sifatSurat" class="form-control" @bind-Value="suratMasuk.SifatSurat" />
+    </div>
+
+    <div class="form-group">
+        <label for="status">Status</label>
+        <InputSelect id="status" class="form-control" @bind-Value="suratMasuk.Status">
+            <option value="@StatusSurat.Diterima">Diterima</option>
+            <option value="@StatusSurat.Diproses">Diproses</option>
+            <option value="@StatusSurat.Ditindaklanjuti">Ditindaklanjuti</option>
+            <option value="@StatusSurat.Ditolak">Ditolak</option>
+            <option value="@StatusSurat.Arsip">Arsip</option>
+        </InputSelect>
+    </div>
+
+    <div class="form-group">
+        <label for="keterangan">Keterangan</label>
+        <InputTextArea id="keterangan" class="form-control" @bind-Value="suratMasuk.Keterangan" />
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Simpan</button>
+        <button type="button" class="btn btn-secondary" @onclick="Batal">Batal</button>
+    </div>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private SuratMasuk suratMasuk = new SuratMasuk();
+    private string Title = "Tambah Surat Masuk Baru";
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id > 0)
+        {
+            Title = "Edit Surat Masuk";
+            suratMasuk = await SuratMasukService.GetById(Id) ?? new SuratMasuk();
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if (Id > 0)
+        {
+            await SuratMasukService.Update(suratMasuk);
+        }
+        else
+        {
+            await SuratMasukService.Create(suratMasuk);
+        }
+
+        NavigationManager.NavigateTo("/surat-masuk");
+    }
+
+    private void Batal()
+    {
+        NavigationManager.NavigateTo("/surat-masuk");
+    }
+}

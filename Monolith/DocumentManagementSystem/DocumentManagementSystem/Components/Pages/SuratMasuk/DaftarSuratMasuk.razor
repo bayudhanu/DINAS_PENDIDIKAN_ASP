@@ -1,0 +1,102 @@
+﻿@page "/surat-masuk/daftar"
+@using DocumentManagementSystem.Models
+@using DocumentManagementSystem.Services
+@inject ISuratMasukService SuratMasukService
+@inject NavigationManager NavigationManager
+
+<h3>Daftar Surat Masuk</h3>
+
+<div class="mb-3">
+    <button class="btn btn-primary" @onclick="TambahSuratMasuk">Tambah Surat Masuk</button>
+    <div class="float-right">
+        <input type="text" class="form-control" placeholder="Cari surat..." @bind="searchKeyword" />
+        <button class="btn btn-secondary" @onclick="SearchSurat">Cari</button>
+    </div>
+</div>
+
+@if (suratMasukList == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>No. Surat</th>
+                <th>Perihal</th>
+                <th>Tanggal Surat</th>
+                <th>Asal Surat</th>
+                <th>Tujuan</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var surat in suratMasukList)
+            {
+                <tr>
+                    <td>@surat.NomorSurat</td>
+                    <td>@surat.Perihal</td>
+                    <td>@surat.TanggalSurat.ToShortDateString()</td>
+                    <td>@surat.AsalSurat</td>
+                    <td>@surat.TujuanSurat</td>
+                    <td>@surat.Status</td>
+                    <td>
+                        <button class="btn btn-sm btn-info" @onclick="() => LihatDetail(surat.Id)">Detail</button>
+                        <button class="btn btn-sm btn-warning" @onclick="() => EditSurat(surat.Id)">Edit</button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => HapusSurat(surat.Id)">Hapus</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<SuratMasuk> suratMasukList = new();
+    private string searchKeyword;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        suratMasukList = await SuratMasukService.GetAll();
+    }
+
+    private void TambahSuratMasuk()
+    {
+        NavigationManager.NavigateTo("/surat-masuk/tambah");
+    }
+
+    private void LihatDetail(int id)
+    {
+        NavigationManager.NavigateTo($"/surat-masuk/detail/{id}");
+    }
+
+    private void EditSurat(int id)
+    {
+        NavigationManager.NavigateTo($"/surat-masuk/edit/{id}");
+    }
+
+    private async Task HapusSurat(int id)
+    {
+        await SuratMasukService.Delete(id);
+        await LoadData();
+    }
+
+    private async Task SearchSurat()
+    {
+        if (!string.IsNullOrEmpty(searchKeyword))
+        {
+            suratMasukList = await SuratMasukService.Search(searchKeyword);
+        }
+        else
+        {
+            await LoadData();
+        }
+    }
+}

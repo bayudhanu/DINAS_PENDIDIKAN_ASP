@@ -1,0 +1,447 @@
+@page "/surat-keluar"
+
+<div class="row">
+    <!-- Header -->
+    <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">
+            <i class="bi bi-envelope-plus text-primary"></i> Surat Keluar
+        </h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group me-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-printer"></i> Cetak
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-download"></i> Export
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <form>
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <label for="tglAwal" class="form-label">Tanggal Awal</label>
+                        <input type="date" class="form-control" id="tglAwal">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="tglAkhir" class="form-label">Tanggal Akhir</label>
+                        <input type="date" class="form-control" id="tglAkhir">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="jenisSurat" class="form-label">Jenis Surat</label>
+                        <select class="form-select" id="jenisSurat">
+                            <option selected value="">Semua Jenis</option>
+                            <option>Surat Undangan</option>
+                            <option>Surat Edaran</option>
+                            <option>Surat Tugas</option>
+                            <option>Surat Pemberitahuan</option>
+                            <option>Laporan</option>
+                            <option>Jawaban</option>
+                            <option>Ijin</option>
+                            <option>Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="klasifikasi" class="form-label">Klasifikasi</label>
+                        <select class="form-select" id="prioritas">
+                            <option selected value="">Semua Klasifikasi</option>
+                            <option>Biasa</option>
+                            <option>Penting</option>
+                            <option>Segera</option>
+                            <option>Rahasia</option>
+                        </select>
+                    </div>
+                    <div class="col-md-8">
+                        <label for="keyword" class="form-label">Kata Kunci</label>
+                        <input type="text" class="form-control" id="keyword" placeholder="Nomor/Perihal/Asal Surat">
+                    </div>
+                    <div class="col-md-4 d-flex align-items-end">
+                        <button type="reset" class="btn btn-outline-secondary me-2">
+                            <i class="bi bi-arrow-counterclockwise"></i> Reset
+                        </button>
+                        <button type="submit" class="btn btn-primary me-2">
+                            <i class="bi bi-funnel"></i> Filter
+                        </button>
+                        <button style="margin-left:180px;align:right;" type="button" class="btn btn-danger"
+                            data-bs-toggle="modal" data-bs-target="#tambahSuratModal">
+                            <i class="bi bi-plus-circle"></i> Tambah Surat
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Surat Masuk Table -->
+    <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Daftar Surat Keluar</h5>
+            <div class="text-muted small">
+                Menampilkan 1-10 dari 142 surat
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover surat-table">
+                    <thead class="table-light">
+                        <tr>
+                            <th width="50">No</th>
+                            <th width="180">Tanggal Surat</th>
+                            <th width="150">Nomor Surat</th>
+                            <th>Tujuan</th>
+                            <th>Perihal</th>
+                            <th width="100">Klasifikasi</th>
+                            <th width="120">Penanggung Jawab</th>
+                            <th width="120">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>24/05/2023</td>
+                            <td>420/0456/DIKBUD/2023</td>
+                            <td>Dinas Pendidikan Provinsi Jawa Tengah</td>
+                            <td>Permohonan Data Sekolah Dasar Se-Kabupaten</td>
+                            <td><span class="badge badge-penting text-white">Penting</span></td>
+                            <td><span class="badge bg-warning status-badge">Proses</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary" title="Detail" data-bs-toggle="modal"
+                                    data-bs-target="#detailSuratModal">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary" title="Download">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>23/05/2023</td>
+                            <td>005/PP/2023</td>
+                            <td>Kementerian Pendidikan dan Kebudayaan</td>
+                            <td>Petunjuk Teknis BOS Tahun 2023</td>
+                            <td><span class="badge badge-sangat-penting">Sangat Penting</span></td>
+                            <td><span class="badge bg-success status-badge">Selesai</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary" title="Detail">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary" title="Download">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>22/05/2023</td>
+                            <td>0321/UN37/2023</td>
+                            <td>Universitas Sebelas Maret</td>
+                            <td>Permohonan Izin Penelitian di Sekolah Dasar</td>
+                            <td><span class="badge badge-biasa text-white">Biasa</span></td>
+                            <td><span class="badge bg-success status-badge">Selesai</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary" title="Detail">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary" title="Download">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>20/05/2023</td>
+                            <td>420.1/0789/DIKBUD/2023</td>
+                            <td>Bupati Boyolali</td>
+                            <td>Undangan Rapat Koordinasi Pendidikan Inklusif</td>
+                            <td><span class="badge badge-penting text-white">Penting</span></td>
+                            <td><span class="badge bg-success status-badge">Selesai</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary" title="Detail">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary" title="Download">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>18/05/2023</td>
+                            <td>1234/SMK/2023</td>
+                            <td>SMK Negeri 1 Boyolali</td>
+                            <td>Laporan Pelaksanaan Ujian Praktek</td>
+                            <td><span class="badge badge-biasa text-white">Biasa</span></td>
+                            <td><span class="badge bg-secondary status-badge">Arsip</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary" title="Detail">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary" title="Download">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center mt-3">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Sebelumnya</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Selanjutnya</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Tambah Surat -->
+<div class="modal fade" id="tambahSuratModal" tabindex="-1" aria-labelledby="tambahSuratModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tambahSuratModalLabel">
+                    <i class="bi bi-envelope-plus"></i> Tambah Surat Keluar
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label for="nomorSurat" class="form-label">Nomor Surat</label>
+                            <input type="text" class="form-control" id="nomorSurat" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="tanggalSurat" class="form-label">Tanggal Surat</label>
+                            <input type="date" class="form-control" id="tanggalSurat" required>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="penanggungJawab" class="form-label">Penanggung Jawab</label>
+                            <select class="form-select" id="penanggungJawab" required>
+                                <option value="">Pilih Penanggung Jawab</option>
+                                <option>Bidang SD</option>
+                                <option>Bidang SMP</option>
+                                <option>Bidang PAUD dan LS</option>
+                                <option>Bidang PPTK</option>
+                                <option>Bidang Kebudayaan</option>
+                                <option>UMPEG</option>
+                                <option>Keuangan</option>
+                                <option>RENLAP</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="tujuanSurat" class="form-label">Tujuan</label>
+                            <input type="text" class="form-control" id="tujuanSurat" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="perihal" class="form-label">Perihal</label>
+                            <input type="text" class="form-control" id="perihal" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="jenisSurat" class="form-label">Jenis Surat</label>
+                            <select class="form-select" id="jenisSurat" required>
+                                <option value="">Pilih Jenis Surat</option>
+                                <option>Surat Undangan</option>
+                                <option>Surat Edaran</option>
+                                <option>Surat Tugas</option>
+                                <option>Surat Pemberitahuan</option>
+                                <option>Laporan</option>
+                                <option>Jawaban</option>
+                                <option>Ijin</option>
+                                <option>Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="klasifikasi" class="form-label">Klasifikasi</label>
+                            <select class="form-select" id="klasifikasi" required>
+                                <option value="biasa">Biasa</option>
+                                <option value="penting">Penting</option>
+                                <option value="rahasia">Rahasia</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="keterangan" class="form-label">Isi Surat</label>
+                            <textarea class="form-control" id="keterangan" rows="3"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <label for="fileSurat" class="form-label">Upload File Surat</label>
+                            <input class="form-control" type="file" id="fileSurat" accept=".pdf,.jpg,.jpeg,.png">
+                            <div class="form-text">Format file: PDF, JPG, PNG (maks. 5MB)</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan Surat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Detail Surat -->
+<div class="modal fade" id="detailSuratModal" tabindex="-1" aria-labelledby="detailSuratModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tambahSuratModalLabel">
+                    <i class="bi bi-envelope-plus"></i> Detail Surat
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label for="nomorSurat" class="form-label">Nomor Surat</label>
+                            <input type="text" class="form-control" id="nomorSurat" read>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="tanggalSurat" class="form-label">Tanggal Surat</label>
+                            <input type="date" class="form-control" id="tanggalSurat" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="tanggalSurat" class="form-label">Tanggal Diterima</label>
+                            <input type="date" class="form-control" id="tanggalDiterima" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="asalSurat" class="form-label">Asal Surat</label>
+                            <input type="text" class="form-control" id="asalSurat" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="perihal" class="form-label">Perihal</label>
+                            <input type="text" class="form-control" id="perihal" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="jenisSurat" class="form-label">Jenis Surat</label>
+                            <select class="form-select" id="jenisSurat" required>
+                                <option value="">Pilih Jenis Surat</option>
+                                <option>Surat Undangan</option>
+                                <option>Surat Edaran</option>
+                                <option>Surat Permohonan</option>
+                                <option>Surat Pemberitahuan</option>
+                                <option>Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="prioritas" class="form-label">Prioritas</label>
+                            <select class="form-select" id="prioritas" required>
+                                <option value="biasa">Biasa</option>
+                                <option value="penting">Penting</option>
+                                <option value="segera">Segera</option>
+                                <option value="rahasia">Rahasia</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="fileSurat" class="form-label">Upload File Surat</label>
+                            <input class="form-control" type="file" id="fileSurat" accept=".pdf,.jpg,.jpeg,.png">
+                            <div class="form-text">Format file: PDF, JPG, PNG (maks. 5MB)</div>
+                        </div>
+                        <div class="col-12">
+                            <label for="keterangan" class="form-label">Keterangan</label>
+                            <textarea class="form-control" id="keterangan" rows="3"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan Surat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Disposisi Surat -->
+<div class="modal fade" id="disposisiSuratModal" tabindex="-1" aria-labelledby="disposisiSuratModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="disposisiSuratModalLabel">
+                    <i class="bi bi-envelope-plus"></i> Disposisi
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label for="nomorSurat" class="form-label">Nomor Surat</label>
+                            <input type="text" class="form-control" id="nomorSurat" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="ditujukan" class="form-label">Ditujukan</label>
+                            <select class="form-select" id="ditujukan" required>
+                                <option value="">Pilih Ditujukan</option>
+                                <option>Sekretaris</option>
+                                <option>Kabid SD</option>
+                                <option>Kabid SMP</option>
+                                <option>Kabid PAUD dan LS</option>
+                                <option>Kabid PPTK</option>
+                                <option>Kasubag UMPEG</option>
+                                <option>Kasubag Keuangan</option>
+                                <option>RENLAP</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="tanggalDisposisi" class="form-label">Tanggal Disposisi</label>
+                            <input type="date" class="form-control" id="tanggalDisposisi" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="isiDisposisi" class="form-label">Isi Disposisi</label>
+                            <textarea class="form-control" id="isiDisposisi" rows="3"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan Disposisi</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-5">
+    <div class="container text-center">
+        <span class="text-muted">© 2023 Dinas Pendidikan dan Kebudayaan Kabupaten Boyolali - Sistem Pengarsipan
+            Surat</span>
+    </div>
+</footer>
+
+<script>
+    // Inisialisasi tooltip
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+
+        // Contoh fungsi untuk menangani klik tombol detail
+        document.querySelectorAll('.btn-outline-primary').forEach(button => {
+            button.addEventListener('click', function () {
+                // Redirect ke halaman detail surat
+                window.location.href = 'detail-surat-masuk.html';
+            });
+        });
+    });
+</script>
