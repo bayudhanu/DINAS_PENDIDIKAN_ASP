@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DinasPendidikanDokumenService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac0d95210204376ee7d52bf7b9158355e3e86a0a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b99a7ffa8539034e9d308013c79d734bf6f62323")]
 [assembly: System.Reflection.AssemblyProductAttribute("DinasPendidikanDokumenService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DinasPendidikanDokumenService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

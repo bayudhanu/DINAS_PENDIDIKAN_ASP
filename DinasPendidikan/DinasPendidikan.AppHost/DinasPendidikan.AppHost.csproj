@@ -13,7 +13,7 @@
     <ProjectReference Include="..\Identity.ApiService\Identity.ApiService.csproj" />
     <ProjectReference Include="..\DinasPendidikan.Web\DinasPendidikan.Web.csproj" />
     <ProjectReference Include="..\DinasPendidikan.ApiService\DinasPendidikan.ApiService.csproj" />
-    <ProjectReference Include="..\DinasPendidikanDokumenService\DinasPendidikanDokumenService.csproj" />
+    <ProjectReference Include="..\DinasPendidikan.DokumenService\DinasPendidikan.DokumenService.csproj" />
     <ProjectReference Include="..\DinasPendidikan.AsetService\DinasPendidikan.AsetService.csproj" />
     <ProjectReference Include="..\DinasPendidikan.LpjService\DinasPendidikan.LpjService.csproj" />
     <ProjectReference Include="..\DinasPendidikan.SchedulerService\DinasPendidikan.SchedulerService.csproj" />

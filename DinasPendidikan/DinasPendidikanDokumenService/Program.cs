@@ -2,13 +2,26 @@ using DinasPendidikan.Database;
 using DinasPendidikan.Database.Repositories.Documents;
 using DinasPendidikanDokumenService.Services.SuratKeluarServices;
 using DinasPendidikanDokumenService.Services.SuratMasukServices;
-using Microsoft.EntityFrameworkCore; // Add this using directive for UseNpgsql extension method
+using Microsoft.EntityFrameworkCore;
+using DinasPendidikan.Contracts;
+using RabbitMQ.Client; // Add this using directive for UseNpgsql extension method
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 
 // Add services to the container.
+
+// Add services
+builder.Services.AddSingleton<IConnection>(_ => {
+    var factory = new ConnectionFactory { HostName = "localhost" };
+    return factory.CreateConnection();
+});
+builder.Services.AddSingleton<IModel>(serviceProvider =>
+{
+    var connection = serviceProvider.GetRequiredService<IConnection>();
+    return connection.CreateModel();
+});
 
 builder.Services.AddControllers();
 
@@ -38,6 +51,13 @@ builder.Services.AddCors(options =>
 });
 var app = builder.Build();
 
+// Configure RabbitMQ exchanges
+using (var scope = app.Services.CreateScope())
+{
+    var channel = scope.ServiceProvider.GetRequiredService<IModel>();
+    channel.ExchangeDeclare("suratmasuk.import", ExchangeType.Fanout, durable: true);
+    channel.ExchangeDeclare("suratmasuk.status", ExchangeType.Fanout, durable: true);
+}
 app.MapDefaultEndpoints();
 
 // Configure the HTTP request pipeline.

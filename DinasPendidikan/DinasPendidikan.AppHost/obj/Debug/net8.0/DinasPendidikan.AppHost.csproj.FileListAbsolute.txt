@@ -139,7 +139,7 @@ D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\Identity_ApiService.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_Web.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_ApiService.ProjectMetadata.g.cs
-D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikanDokumenService.ProjectMetadata.g.cs
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_DokumenService.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_AsetService.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_LpjService.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_SchedulerService.ProjectMetadata.g.cs

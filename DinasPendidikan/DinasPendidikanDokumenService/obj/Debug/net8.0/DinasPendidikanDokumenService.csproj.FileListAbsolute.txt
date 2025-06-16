@@ -94,6 +94,7 @@ D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\Polly.Core.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\Polly.Extensions.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\Polly.RateLimiting.dll
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\RabbitMQ.Client.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -195,11 +196,13 @@ D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\DinasPendidikan.Contracts.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\DinasPendidikan.Database.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\DinasPendidikan.ServiceDefaults.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\DinasPendidikan.Shared.dll
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\DinasPendidikan.ServiceDefaults.pdb
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\DinasPendidikan.Database.pdb
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\DinasPendidikan.Contracts.pdb
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\bin\Debug\net8.0\DinasPendidikan.Shared.pdb
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\obj\Debug\net8.0\DinasPendidikanDokumenService.csproj.AssemblyReference.cache
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikanDokumenService\obj\Debug\net8.0\rpswa.dswa.cache.json

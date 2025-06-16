@@ -12,12 +12,14 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.7.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DinasPendidikan.Database\DinasPendidikan.Database.csproj" />
     <ProjectReference Include="..\DinasPendidikan.ServiceDefaults\DinasPendidikan.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\DinasPendidikan.Contracts\DinasPendidikan.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

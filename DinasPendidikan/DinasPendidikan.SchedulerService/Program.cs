@@ -1,6 +1,8 @@
 using DinasPendidikan.Database;
 using DinasPendidikan.Database.Repositories.Documents;
 using Microsoft.EntityFrameworkCore; // Add this using directive for UseNpgsql extension method
+using DinasPendidikan.Contracts;
+using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +28,18 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader();
     });
 });
+
+// Add services
+builder.Services.AddSingleton<IConnection>(_ => {
+    var factory = new ConnectionFactory { HostName = "localhost" };
+    return factory.CreateConnection();
+});
+builder.Services.AddSingleton<IModel>(serviceProvider => {
+    var connection = serviceProvider.GetRequiredService<IConnection>();
+    return connection.CreateModel();
+});
+builder.Services.AddHostedService<SuratMasukProcessor>();
+
 var app = builder.Build();
 
 app.MapDefaultEndpoints();
