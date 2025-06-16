@@ -1,0 +1,40 @@
+<div class="modal @(IsVisible ? "d-block" : "d-none")" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Title</h5>
+                <button type="button" class="btn-close" @onclick="Close"></button>
+            </div>
+            <div class="modal-body">
+                @ChildContent
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" @onclick="Close">Tutup</button>
+                @if (ShowConfirmButton)
+                {
+                    <button type="button" class="btn btn-primary" @onclick="@Confirm">@ConfirmButtonText</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Title { get; set; } = "Form Surat";
+    [Parameter] public bool IsVisible { get; set; }
+    [Parameter] public bool ShowConfirmButton { get; set; } = true;
+    [Parameter] public string ConfirmButtonText { get; set; } = "Simpan";
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public EventCallback OnConfirm { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private async Task Confirm()
+    {
+        await OnConfirm.InvokeAsync();
+    }
+
+    public async Task Close()
+    {
+        await OnClose.InvokeAsync();
+    }
+}

@@ -22,67 +22,7 @@ namespace DinasPendidikan.Database.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.Document", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("CreatedById")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("DocumentDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("DocumentNumber")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
-
-                    b.Property<int>("DocumentTypeId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime?>("DueDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Notes")
-                        .HasColumnType("text");
-
-                    b.Property<DateTime?>("ReceivedDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Subject")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("character varying(200)");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int?>("UpdatedById")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CreatedById");
-
-                    b.HasIndex("DocumentTypeId");
-
-                    b.HasIndex("UpdatedById");
-
-                    b.ToTable("Documents");
-                });
-
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.DocumentAttachment", b =>
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.AttachmentDokumen", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -93,11 +33,11 @@ namespace DinasPendidikan.Database.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Deskripsi")
                         .HasMaxLength(200)
                         .HasColumnType("character varying(200)");
 
-                    b.Property<int>("DocumentId")
+                    b.Property<int>("DokumenId")
                         .HasColumnType("integer");
 
                     b.Property<string>("FileName")
@@ -122,12 +62,12 @@ namespace DinasPendidikan.Database.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DocumentId");
+                    b.HasIndex("DokumenId");
 
-                    b.ToTable("DocumentAttachments");
+                    b.ToTable("AttachmentDokumen");
                 });
 
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.DocumentType", b =>
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.Disposisi", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -135,32 +75,44 @@ namespace DinasPendidikan.Database.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Code")
+                    b.Property<string>("Catatan")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("character varying(20)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("Description")
-                        .HasMaxLength(200)
-                        .HasColumnType("character varying(200)");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("Dari")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
+                        .HasColumnType("text");
+
+                    b.Property<string>("IsiDisposisi")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Kepada")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("NomorDisposisi")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("SuratMasukId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("TanggalDisposisi")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 
-                    b.ToTable("DocumentTypes");
+                    b.ToTable("Disposisi");
                 });
 
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.InventoryCategory", b =>
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.Dokumen", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -168,89 +120,8 @@ namespace DinasPendidikan.Database.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(200)
-                        .HasColumnType("character varying(200)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("InventoryCategories");
-                });
-
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.InventoryItem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Condition")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("character varying(20)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(500)
-                        .HasColumnType("character varying(500)");
-
-                    b.Property<string>("ItemCode")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("character varying(20)");
-
-                    b.Property<string>("Location")
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
-
-                    b.Property<DateTime?>("PurchaseDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<decimal?>("PurchasePrice")
-                        .HasColumnType("numeric");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("InventoryItems");
-                });
-
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.InventoryTransaction", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    b.Property<string>("Catatan")
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -258,20 +129,28 @@ namespace DinasPendidikan.Database.Migrations
                     b.Property<int>("CreatedById")
                         .HasColumnType("integer");
 
-                    b.Property<int>("ItemId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Notes")
+                    b.Property<string>("Judul")
+                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("character varying(200)");
 
-                    b.Property<int>("QuantityChange")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("TransactionType")
+                    b.Property<string>("Konten")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("character varying(20)");
+                        .HasColumnType("text");
+
+                    b.Property<string>("NomorDokumen")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<DateTime>("TanggalDokumen")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("TanggalTerima")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("TipeDokumenId")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -283,11 +162,311 @@ namespace DinasPendidikan.Database.Migrations
 
                     b.HasIndex("CreatedById");
 
-                    b.HasIndex("ItemId");
+                    b.HasIndex("TipeDokumenId");
 
                     b.HasIndex("UpdatedById");
 
-                    b.ToTable("InventoryTransactions");
+                    b.ToTable("Dokumen");
+                });
+
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.SuratKeluar", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("IsiRingkas")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("NomorSurat")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Penandatangan")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Perihal")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("TanggalSurat")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Tujuan")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SuratKeluar");
+                });
+
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.SuratKeputusan", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Catatan")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Dari")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("IsiSuratKeputusan")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Kepada")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("NomorSuratKeputusan")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("TanggalSuratKeputusan")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SuratKeputusan");
+                });
+
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.SuratMasuk", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("IsiRingkas")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("NomorSurat")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Penerima")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Pengirim")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Perihal")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("TanggalDiterima")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("TanggalSurat")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SuratMasuk");
+                });
+
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.TipeDokumen", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Deskripsi")
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<string>("Kode")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("Nama")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TipeDokumen");
+                });
+
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.DaftarBarang", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Deskripsi")
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
+
+                    b.Property<decimal?>("HargaPembelian")
+                        .HasColumnType("numeric");
+
+                    b.Property<int>("Jumlah")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("KategoriBarangId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("KodeBarang")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("Kondisi")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("Lokasi")
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<string>("NamaBarang")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTime?>("TanggalPembelian")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("KategoriBarangId");
+
+                    b.ToTable("DaftarBarang");
+                });
+
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.KategoriBarang", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Deskripsi")
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<string>("Nama")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("KategoriBarang");
+                });
+
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.TransaksiBarang", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Catatan")
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("CreatedById")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("DaftarBarangId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("JenisTransaksi")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<int>("Jumlah")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int?>("UpdatedById")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedById");
+
+                    b.HasIndex("DaftarBarangId");
+
+                    b.HasIndex("UpdatedById");
+
+                    b.ToTable("TransaksiBarang");
                 });
 
             modelBuilder.Entity("DinasPendidikan.Shared.Models.Users.Role", b =>
@@ -316,7 +495,7 @@ namespace DinasPendidikan.Database.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Roles");
+                    b.ToTable("Role");
                 });
 
             modelBuilder.Entity("DinasPendidikan.Shared.Models.Users.User", b =>
@@ -363,7 +542,7 @@ namespace DinasPendidikan.Database.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("DinasPendidikan.Shared.Models.Users.UserRole", b =>
@@ -381,10 +560,21 @@ namespace DinasPendidikan.Database.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("UserRoles");
+                    b.ToTable("UserRole");
                 });
 
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.Document", b =>
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.AttachmentDokumen", b =>
+                {
+                    b.HasOne("DinasPendidikan.Shared.Models.Documents.Dokumen", "Dokumen")
+                        .WithMany("Attachments")
+                        .HasForeignKey("DokumenId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dokumen");
+                });
+
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.Dokumen", b =>
                 {
                     b.HasOne("DinasPendidikan.Shared.Models.Users.User", "CreatedBy")
                         .WithMany()
@@ -392,9 +582,9 @@ namespace DinasPendidikan.Database.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DinasPendidikan.Shared.Models.Documents.DocumentType", "DocumentType")
+                    b.HasOne("DinasPendidikan.Shared.Models.Documents.TipeDokumen", "TipeDokumen")
                         .WithMany()
-                        .HasForeignKey("DocumentTypeId")
+                        .HasForeignKey("TipeDokumenId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -404,34 +594,23 @@ namespace DinasPendidikan.Database.Migrations
 
                     b.Navigation("CreatedBy");
 
-                    b.Navigation("DocumentType");
+                    b.Navigation("TipeDokumen");
 
                     b.Navigation("UpdatedBy");
                 });
 
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.DocumentAttachment", b =>
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.DaftarBarang", b =>
                 {
-                    b.HasOne("DinasPendidikan.Shared.Models.Documents.Document", "Document")
-                        .WithMany("Attachments")
-                        .HasForeignKey("DocumentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Document");
-                });
-
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.InventoryItem", b =>
-                {
-                    b.HasOne("DinasPendidikan.Shared.Models.Inventory.InventoryCategory", "Category")
+                    b.HasOne("DinasPendidikan.Shared.Models.Inventory.KategoriBarang", "KategoriBarang")
                         .WithMany()
-                        .HasForeignKey("CategoryId")
+                        .HasForeignKey("KategoriBarangId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Category");
+                    b.Navigation("KategoriBarang");
                 });
 
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.InventoryTransaction", b =>
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.TransaksiBarang", b =>
                 {
                     b.HasOne("DinasPendidikan.Shared.Models.Users.User", "CreatedBy")
                         .WithMany()
@@ -439,9 +618,9 @@ namespace DinasPendidikan.Database.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DinasPendidikan.Shared.Models.Inventory.InventoryItem", "Item")
-                        .WithMany("Transactions")
-                        .HasForeignKey("ItemId")
+                    b.HasOne("DinasPendidikan.Shared.Models.Inventory.DaftarBarang", "DaftarBarang")
+                        .WithMany("TransaksiBarang")
+                        .HasForeignKey("DaftarBarangId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -451,7 +630,7 @@ namespace DinasPendidikan.Database.Migrations
 
                     b.Navigation("CreatedBy");
 
-                    b.Navigation("Item");
+                    b.Navigation("DaftarBarang");
 
                     b.Navigation("UpdatedBy");
                 });
@@ -475,14 +654,14 @@ namespace DinasPendidikan.Database.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.Document", b =>
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Documents.Dokumen", b =>
                 {
                     b.Navigation("Attachments");
                 });
 
-            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.InventoryItem", b =>
+            modelBuilder.Entity("DinasPendidikan.Shared.Models.Inventory.DaftarBarang", b =>
                 {
-                    b.Navigation("Transactions");
+                    b.Navigation("TransaksiBarang");
                 });
 #pragma warning restore 612, 618
         }

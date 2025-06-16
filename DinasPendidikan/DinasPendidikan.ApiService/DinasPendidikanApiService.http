@@ -1,0 +1,6 @@
+@DinasPendidikanApiService_HostAddress = http://localhost:5450
+
+GET {{DinasPendidikanApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

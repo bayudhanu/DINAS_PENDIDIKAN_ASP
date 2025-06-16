@@ -136,10 +136,12 @@ D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\DinasPendidikan.AppHost.AssemblyInfoInputs.cache
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\DinasPendidikan.AppHost.AssemblyInfo.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\DinasPendidikan.AppHost.csproj.CoreCompileInputs.cache
-D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_ApiService.ProjectMetadata.g.cs
-D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_Web.ProjectMetadata.g.cs
-D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikanDokumenService.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\Identity_ApiService.ProjectMetadata.g.cs
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_Web.ProjectMetadata.g.cs
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_ApiService.ProjectMetadata.g.cs
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikanDokumenService.ProjectMetadata.g.cs
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_AsetService.ProjectMetadata.g.cs
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_LpjService.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\DinasPendidikan.AppHost.sourcelink.json
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\DinasPen.25630288.Up2Date

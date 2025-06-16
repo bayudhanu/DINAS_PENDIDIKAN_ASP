@@ -3,60 +3,24 @@
   "WorkspaceRootPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{397FD6F4-36A0-44E3-AD45-CA155F11101F}|DinasPendidikan.Database\\DinasPendidikan.Database.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.database\\dinaspendidikandbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{397FD6F4-36A0-44E3-AD45-CA155F11101F}|DinasPendidikan.Database\\DinasPendidikan.Database.csproj|solutionrelative:dinaspendidikan.database\\dinaspendidikandbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{464700A8-0C5D-B671-EC92-B8FDA85287E8}|DinasPendidikanDokumenService\\DinasPendidikanDokumenService.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikandokumenservice\\controllers\\suratkeluarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464700A8-0C5D-B671-EC92-B8FDA85287E8}|DinasPendidikanDokumenService\\DinasPendidikanDokumenService.csproj|solutionrelative:dinaspendidikandokumenservice\\controllers\\suratkeluarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\documents\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\documents\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{464700A8-0C5D-B671-EC92-B8FDA85287E8}|DinasPendidikanDokumenService\\DinasPendidikanDokumenService.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikandokumenservice\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464700A8-0C5D-B671-EC92-B8FDA85287E8}|DinasPendidikanDokumenService\\DinasPendidikanDokumenService.csproj|solutionrelative:dinaspendidikandokumenservice\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\documents\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\documents\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{464700A8-0C5D-B671-EC92-B8FDA85287E8}|DinasPendidikanDokumenService\\DinasPendidikanDokumenService.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikandokumenservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464700A8-0C5D-B671-EC92-B8FDA85287E8}|DinasPendidikanDokumenService\\DinasPendidikanDokumenService.csproj|solutionrelative:dinaspendidikandokumenservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\documents\\documentattachement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\documents\\documentattachement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BF8D442-318E-9A28-E9CC-9450A4ABBCEF}|DinasPendidikan.Web\\DinasPendidikan.Web.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.web\\components\\pages\\suratkeluar\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BF8D442-318E-9A28-E9CC-9450A4ABBCEF}|DinasPendidikan.Web\\DinasPendidikan.Web.csproj|solutionrelative:dinaspendidikan.web\\components\\pages\\suratkeluar\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{397FD6F4-36A0-44E3-AD45-CA155F11101F}|DinasPendidikan.Database\\DinasPendidikan.Database.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.database\\dinaspendidikan.database.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{397FD6F4-36A0-44E3-AD45-CA155F11101F}|DinasPendidikan.Database\\DinasPendidikan.Database.csproj|solutionrelative:dinaspendidikan.database\\dinaspendidikan.database.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\shared\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\shared\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\users\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\users\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\users\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\users\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\shared\\baseusertrackedmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\shared\\baseusertrackedmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\inventory\\inventorytransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\inventory\\inventorytransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\inventory\\inventorycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\inventory\\inventorycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.shared\\models\\inventory\\intentoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87F68D7-5F91-415E-B368-DD5210FDCA84}|DinasPendidikan.Shared\\DinasPendidikan.Shared.csproj|solutionrelative:dinaspendidikan.shared\\models\\inventory\\intentoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{397FD6F4-36A0-44E3-AD45-CA155F11101F}|DinasPendidikan.Database\\DinasPendidikan.Database.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.database\\dinaspendidikandbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{397FD6F4-36A0-44E3-AD45-CA155F11101F}|DinasPendidikan.Database\\DinasPendidikan.Database.csproj|solutionrelative:dinaspendidikan.database\\dinaspendidikandbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BF8D442-318E-9A28-E9CC-9450A4ABBCEF}|DinasPendidikan.Web\\DinasPendidikan.Web.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.web\\components\\pages\\modaldialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BF8D442-318E-9A28-E9CC-9450A4ABBCEF}|DinasPendidikan.Web\\DinasPendidikan.Web.csproj|solutionrelative:dinaspendidikan.web\\components\\pages\\modaldialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,188 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DinasPendidikan.Database.csproj.Backup.tmp",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj.Backup.tmp",
-              "RelativeDocumentMoniker": "DinasPendidikan.Database\\DinasPendidikan.Database.csproj.Backup.tmp",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikan.Database.csproj.Backup.tmp",
-              "RelativeToolTip": "DinasPendidikan.Database\\DinasPendidikan.Database.csproj.Backup.tmp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-31T00:01:47.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BaseModel.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Shared\\BaseModel.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Shared\\BaseModel.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Shared\\BaseModel.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Shared\\BaseModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:55:57.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserRole.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Users\\UserRole.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Users\\UserRole.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Users\\UserRole.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Users\\UserRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:53:46.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Users\\User.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Users\\User.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Users\\User.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Users\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:53:40.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Users\\Role.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Users\\Role.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Users\\Role.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Users\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:53:32.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DinasPendidikanDbContext.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikanDbContext.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Database\\DinasPendidikanDbContext.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikanDbContext.cs",
-              "RelativeToolTip": "DinasPendidikan.Database\\DinasPendidikanDbContext.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAADwv00AAAAkAAAAAAAAAA==",
+              "Title": "SuratKeluarController.cs",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikanDokumenService\\Controllers\\SuratKeluarController.cs",
+              "RelativeDocumentMoniker": "DinasPendidikanDokumenService\\Controllers\\SuratKeluarController.cs",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikanDokumenService\\Controllers\\SuratKeluarController.cs",
+              "RelativeToolTip": "DinasPendidikanDokumenService\\Controllers\\SuratKeluarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:44:16.971Z",
+              "WhenOpened": "2025-06-14T15:14:40.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DocumentType.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Documents\\DocumentType.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Documents\\DocumentType.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Documents\\DocumentType.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Documents\\DocumentType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAYAAAAAAAAAA==",
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikanDokumenService\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "DinasPendidikanDokumenService\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikanDokumenService\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "DinasPendidikanDokumenService\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:51:32.29Z",
+              "WhenOpened": "2025-06-14T15:14:03.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikanDokumenService\\Program.cs",
+              "RelativeDocumentMoniker": "DinasPendidikanDokumenService\\Program.cs",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikanDokumenService\\Program.cs",
+              "RelativeToolTip": "DinasPendidikanDokumenService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T15:08:33.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ModalDialog.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Web\\Components\\Pages\\ModalDialog.razor",
+              "RelativeDocumentMoniker": "DinasPendidikan.Web\\Components\\Pages\\ModalDialog.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Web\\Components\\Pages\\ModalDialog.razor",
+              "RelativeToolTip": "DinasPendidikan.Web\\Components\\Pages\\ModalDialog.razor",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-14T15:03:30.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DocumentAttachement.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Documents\\DocumentAttachement.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Documents\\DocumentAttachement.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Documents\\DocumentAttachement.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Documents\\DocumentAttachement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:51:12.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Document.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Documents\\Document.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Documents\\Document.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Documents\\Document.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Documents\\Document.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:51:06.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BaseUserTrackedModel.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Shared\\BaseUserTrackedModel.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Shared\\BaseUserTrackedModel.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Shared\\BaseUserTrackedModel.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Shared\\BaseUserTrackedModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:56:02.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InventoryTransaction.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Inventory\\InventoryTransaction.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Inventory\\InventoryTransaction.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Inventory\\InventoryTransaction.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Inventory\\InventoryTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:51:52.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "InventoryCategory.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Inventory\\InventoryCategory.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Inventory\\InventoryCategory.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Inventory\\InventoryCategory.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Inventory\\InventoryCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:51:49.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IntentoryItem.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Inventory\\IntentoryItem.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Shared\\Models\\Inventory\\IntentoryItem.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Shared\\Models\\Inventory\\IntentoryItem.cs",
-              "RelativeToolTip": "DinasPendidikan.Shared\\Models\\Inventory\\IntentoryItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:51:34.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DinasPendidikanDbContextFactory.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikanDbContextFactory.cs",
-              "RelativeDocumentMoniker": "DinasPendidikan.Database\\DinasPendidikanDbContextFactory.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Database\\DinasPendidikanDbContextFactory.cs",
-              "RelativeToolTip": "DinasPendidikan.Database\\DinasPendidikanDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T23:44:17.923Z",
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Web\\Components\\Pages\\SuratKeluar\\Index.razor",
+              "RelativeDocumentMoniker": "DinasPendidikan.Web\\Components\\Pages\\SuratKeluar\\Index.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Web\\Components\\Pages\\SuratKeluar\\Index.razor",
+              "RelativeToolTip": "DinasPendidikan.Web\\Components\\Pages\\SuratKeluar\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-14T15:03:16.107Z",
               "EditorCaption": ""
             }
           ]

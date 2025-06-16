@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "083Ojd8s2cHGxXblRrqLaLf4XLpTCUCNOYYIlk2+fBY=",
-  "Source": "DinasPendidikan.ApiService",
-  "BasePath": "_content/DinasPendidikan.ApiService",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"083Ojd8s2cHGxXblRrqLaLf4XLpTCUCNOYYIlk2+fBY=","Source":"DinasPendidikan.ApiService","BasePath":"_content/DinasPendidikan.ApiService","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

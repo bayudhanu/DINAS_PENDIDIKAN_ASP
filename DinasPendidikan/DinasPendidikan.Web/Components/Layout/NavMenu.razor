@@ -1,13 +1,13 @@
 ﻿<nav class="main-navbar">
 	<div class="container">
 		<ul>
-			<li class="menu-item">
-				<NavLink class="menu-link nav-link" href="dashboard">
-					<span><i class="bi bi-grid-fill"></i> Dashboard</span>
-				</NavLink>
+			<li class="menu-item active">
+				<a href="dashboard" class="menu-link">
+					<span><i class="bi bi-grid-fill"></i> Dashboard </span>
+				</a>
 			</li>
 
-			<li class="menu-item active has-sub">
+			<li class="menu-item  has-sub">
                 <a href="#" class='menu-link'>
                     <span><i class="bi bi-grid-1x2-fill"></i> Surat Menyurat </span>
                 </a>
@@ -33,20 +33,54 @@
                             </li>
 
 							<li class="submenu-item  nav-link">
-								<NavLink class="menu-link nav-link" href="counter">
-									<span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-								</NavLink>
+								<a href="counter" class='submenu-link'>Counter</a>
 							</li>
 
 							<li class="submenu-item  ">
-								<NavLink class="menu-link nav-link" href="weather">
-									<span class="bi bi-grid-fill" aria-hidden="true"></span> Weather
-								</NavLink>
+								<a href="weather" class='submenu-link'>Weather</a>
 							</li>
 						</ul>                                                
                     </div>
                 </div>
             </li>
+
+			<li class="menu-item has-sub">
+                <a href="#" class='menu-link'>
+                    <span><i class="bi bi-grid-1x2-fill"></i> Pengelolaan Aset </span>
+                </a>
+                <div
+                    class="submenu">
+                    <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                    <div class="submenu-group-wrapper" x-data="{ content: '' }">
+                        <ul class="submenu-group">
+							<li class="submenu-item nav-link">
+                                <a href="surat-masuk" class='submenu-link'>Surat Masuk</a>           
+                            </li>
+
+							<li class="submenu-item nav-link">
+                                <a href="surat-keluar" class='submenu-link'>Surat Keluar</a>          
+                            </li>
+							
+							<li class="submenu-item nav-link">
+                                <a href="disposisi" class='submenu-link'>Disposisi</a>          
+                            </li>
+
+							<li class="submenu-item nav-link">
+                                <a href="dokumen-regulasi" class='submenu-link'>Dokumen Regulasi</a>          
+                            </li>
+
+							<li class="submenu-item  nav-link">
+								<a href="counter" class='submenu-link'>Counter</a>
+							</li>
+
+							<li class="submenu-item  ">
+								<a href="weather" class='submenu-link'>Weather</a>
+							</li>
+						</ul>                                                
+                    </div>
+                </div>
+            </li>
+
 		</ul>
 	</div>
 </nav>

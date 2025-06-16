@@ -10,15 +10,19 @@ public class DinasPendidikanDbContext : DbContext
     public DinasPendidikanDbContext(DbContextOptions<DinasPendidikanDbContext> options) : base(options) { }
 
     // Tabel-tabel utama
-    public DbSet<User> Users { get; set; }
-    public DbSet<Role> Roles { get; set; }
-    public DbSet<UserRole> UserRoles { get; set; }
-    public DbSet<Document> Documents { get; set; }
-    public DbSet<DocumentType> DocumentTypes { get; set; }
-    public DbSet<DocumentAttachment> DocumentAttachments { get; set; }
-    public DbSet<InventoryItem> InventoryItems { get; set; }
-    public DbSet<InventoryCategory> InventoryCategories { get; set; }
-    public DbSet<InventoryTransaction> InventoryTransactions { get; set; }
+    public DbSet<User> User { get; set; }
+    public DbSet<Role> Role { get; set; }
+    public DbSet<UserRole> UserRole { get; set; }
+    public DbSet<Dokumen> Dokumen { get; set; }
+    public DbSet<TipeDokumen> TipeDokumen { get; set; }
+    public DbSet<AttachmentDokumen> AttachmentDokumen { get; set; }
+    public DbSet<Disposisi> Disposisi { get; set; }
+    public DbSet<SuratMasuk> SuratMasuk { get; set; }
+    public DbSet<SuratKeluar> SuratKeluar { get; set; }
+    public DbSet<SuratKeputusan> SuratKeputusan { get; set; }   
+    public DbSet<DaftarBarang> DaftarBarang { get; set; }
+    public DbSet<KategoriBarang> KategoriBarang { get; set; }
+    public DbSet<TransaksiBarang> TransaksiBarang { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -68,29 +72,29 @@ public class DinasPendidikanDbContext : DbContext
             new UserRole { UserId = 1, RoleId = 1 }
         );
 
-        modelBuilder.Entity<DocumentType>(entity =>
+        modelBuilder.Entity<TipeDokumen>(entity =>
         {
             entity.HasKey(e => e.Id); // Set Id sebagai primary key
             entity.Property(e => e.Id)
                   .ValueGeneratedOnAdd(); // Config as identity column
 
-            entity.Property(e => e.Name)
+            entity.Property(e => e.Nama)
                   .IsRequired()
                   .HasMaxLength(100);
 
             // Seed document types
-            modelBuilder.Entity<DocumentType>().HasData(
-                new DocumentType { Name = "Surat Masuk", Code = "SM", Description = "Dokumen surat masuk" },
-                new DocumentType { Name = "Surat Keluar", Code = "SK", Description = "Dokumen surat keluar" },
-                new DocumentType { Name = "Surat Keputusan", Code = "SKEP", Description = "Dokumen surat keputusan" }
+            modelBuilder.Entity<TipeDokumen>().HasData(
+                new TipeDokumen { Nama = "Surat Masuk", Kode = "SM", Deskripsi = "Dokumen surat masuk" },
+                new TipeDokumen { Nama = "Surat Keluar", Kode = "SK", Deskripsi = "Dokumen surat keluar" },
+                new TipeDokumen { Nama = "Surat Keputusan", Kode = "SKEP", Deskripsi = "Dokumen surat keputusan" }
             );
         });
 
         // Seed inventory categories
-        modelBuilder.Entity<InventoryCategory>().HasData(
-        new InventoryCategory { Name = "Elektronik", Description = "Perangkat elektronik" },
-        new InventoryCategory { Name = "Furniture", Description = "Perabot kantor" },
-        new InventoryCategory { Name = "Kendaraan", Description = "Kendaraan dinas" }
+        modelBuilder.Entity<KategoriBarang>().HasData(
+        new KategoriBarang { Nama = "Elektronik", Deskripsi = "Perangkat elektronik" },
+        new KategoriBarang { Nama = "Furniture", Deskripsi = "Perabot kantor" },
+        new KategoriBarang { Nama = "Kendaraan", Deskripsi = "Kendaraan dinas" }
     );
     }
 }
