@@ -35,7 +35,7 @@ namespace DinasPendidikan.Database.Repositories.Documents{
 
         public async Task<SuratKeluar> GetByIdAsync(int id)
         {
-            return await _context.Set<SuratKeluar>().FindAsync(id);
+            return await _context.Set<SuratKeluar>().FindAsync(id) ?? new SuratKeluar();
         }
 
         public async Task UpdateAsync(SuratKeluar surat)

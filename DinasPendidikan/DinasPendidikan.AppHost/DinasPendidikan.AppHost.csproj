@@ -16,6 +16,7 @@
     <ProjectReference Include="..\DinasPendidikanDokumenService\DinasPendidikanDokumenService.csproj" />
     <ProjectReference Include="..\DinasPendidikan.AsetService\DinasPendidikan.AsetService.csproj" />
     <ProjectReference Include="..\DinasPendidikan.LpjService\DinasPendidikan.LpjService.csproj" />
+    <ProjectReference Include="..\DinasPendidikan.SchedulerService\DinasPendidikan.SchedulerService.csproj" />
   </ItemGroup>
 
   <ItemGroup>

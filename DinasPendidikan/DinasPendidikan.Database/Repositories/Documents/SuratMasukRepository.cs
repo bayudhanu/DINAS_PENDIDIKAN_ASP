@@ -33,7 +33,7 @@ namespace DinasPendidikan.Database.Repositories.Documents{
 
         public async Task<SuratMasuk> GetByIdAsync(int id)
         {
-            return await _context.Set<SuratMasuk>().FindAsync(id);
+            return await _context.Set<SuratMasuk>().FindAsync(id) ?? new SuratMasuk();
         }
 
         public async Task UpdateAsync(SuratMasuk surat)

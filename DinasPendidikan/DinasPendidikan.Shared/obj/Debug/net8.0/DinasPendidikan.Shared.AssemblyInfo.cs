@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DinasPendidikan.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c294b5d25bc17bf025bccca1368fef7a333e06a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac0d95210204376ee7d52bf7b9158355e3e86a0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("DinasPendidikan.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DinasPendidikan.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

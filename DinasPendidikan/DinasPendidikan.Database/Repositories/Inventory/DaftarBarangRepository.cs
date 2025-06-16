@@ -33,7 +33,7 @@ namespace DinasPendidikan.Database.Repositories.Inventory{
 
         public async Task<DaftarBarang> GetByIdAsync(int id)
         {
-            return await _context.Set<DaftarBarang>().FindAsync(id);
+            return await _context.Set<DaftarBarang>().FindAsync(id) ?? new DaftarBarang();
         }
 
         public async Task UpdateAsync(DaftarBarang daftarBarang)

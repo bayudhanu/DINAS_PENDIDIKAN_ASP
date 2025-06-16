@@ -1,8 +1,9 @@
 using DinasPendidikan.Shared.Models.Documents;
 using Microsoft.EntityFrameworkCore;
 
-namespace DinasPendidikan.Database.Repositories.Documents{
-    
+namespace DinasPendidikan.Database.Repositories.Documents
+{
+
     public interface IDisposisiRepository
     {
         Task<List<Disposisi>> GetAllAsync();
@@ -33,7 +34,12 @@ namespace DinasPendidikan.Database.Repositories.Documents{
 
         public async Task<Disposisi> GetByIdAsync(int id)
         {
-            return await _context.Set<Disposisi>().FindAsync(id);
+            var disposisi = await _context.Set<Disposisi>().FindAsync(id);
+            if (disposisi == null)
+            {
+                throw new InvalidOperationException($"Disposisi with id {id} not found.");
+            }
+            return disposisi;
         }
 
         public async Task UpdateAsync(Disposisi disposisi)

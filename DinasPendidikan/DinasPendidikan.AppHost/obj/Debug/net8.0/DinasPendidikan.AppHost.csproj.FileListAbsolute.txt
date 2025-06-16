@@ -142,6 +142,7 @@ D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikanDokumenService.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_AsetService.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_LpjService.ProjectMetadata.g.cs
+D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\DinasPendidikan_SchedulerService.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\DinasPendidikan.AppHost.sourcelink.json
 D:\Github\DINAS_PENDIDIKAN_ASP\DinasPendidikan\DinasPendidikan.AppHost\obj\Debug\net8.0\DinasPen.25630288.Up2Date
