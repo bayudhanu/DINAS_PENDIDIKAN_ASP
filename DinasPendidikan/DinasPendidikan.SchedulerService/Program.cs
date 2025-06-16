@@ -3,8 +3,13 @@ using DinasPendidikan.Database.Repositories.Documents;
 using Microsoft.EntityFrameworkCore; // Add this using directive for UseNpgsql extension method
 using DinasPendidikan.Contracts;
 using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
+using System.Text;
+using System.Text.Json;
+
 
 var builder = WebApplication.CreateBuilder(args);
+var hostApplicationBuilder = Host.CreateApplicationBuilder(args);
 
 builder.AddServiceDefaults();
 
@@ -77,7 +82,8 @@ app.MapControllers();
 
 app.UseCors("AllowAll");
 
-await app.RunAsync();
+var host = hostApplicationBuilder.Build();
+host.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {

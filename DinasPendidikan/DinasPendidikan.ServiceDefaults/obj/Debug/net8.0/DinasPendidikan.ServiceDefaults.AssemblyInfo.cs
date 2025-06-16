@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DinasPendidikan.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b99a7ffa8539034e9d308013c79d734bf6f62323")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+901ec53522c66ff0b889979ade495cd0f5889115")]
 [assembly: System.Reflection.AssemblyProductAttribute("DinasPendidikan.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DinasPendidikan.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

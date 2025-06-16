@@ -1,6 +1,0 @@
-@DinasPendidikanDokumenService_HostAddress = http://localhost:5014
-
-GET {{DinasPendidikanDokumenService_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
