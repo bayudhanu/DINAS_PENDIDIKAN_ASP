@@ -26,7 +26,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DinasPendidikan.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4da69f26aaf05066069a41673ed31a8e5f3760e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93bedb67a89353643c5f8957f9936df196cf9122")]
 [assembly: System.Reflection.AssemblyProductAttribute("DinasPendidikan.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DinasPendidikan.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
