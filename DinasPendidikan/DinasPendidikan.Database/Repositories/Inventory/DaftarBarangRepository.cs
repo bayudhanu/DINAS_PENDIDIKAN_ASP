@@ -2,7 +2,8 @@
 using DinasPendidikan.Shared.Models.Inventory;
 using Microsoft.EntityFrameworkCore;
 
-namespace DinasPendidikan.Database.Repositories.Inventory{
+namespace DinasPendidikan.Database.Repositories.Inventory
+{
     public interface IDaftarBarangRepository
     {
         Task<List<DaftarBarang>> GetAllAsync();
@@ -23,7 +24,7 @@ namespace DinasPendidikan.Database.Repositories.Inventory{
         public async Task<List<DaftarBarang>> GetAllAsync()
         {
             return await _context.Set<DaftarBarang>().ToListAsync();
-        }   
+        }
 
         public async Task AddAsync(DaftarBarang daftarBarang)
         {

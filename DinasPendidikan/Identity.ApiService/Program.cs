@@ -1,6 +1,4 @@
 using Identity.ApiService;
-using Microsoft.AspNetCore.Builder; // Ensure this namespace is included
-using Microsoft.Extensions.DependencyInjection; // Ensure this namespace is included
 using Microsoft.OpenApi.Models; // Add this namespace for OpenAPI/Swagger support
 
 var builder = WebApplication.CreateBuilder(args);

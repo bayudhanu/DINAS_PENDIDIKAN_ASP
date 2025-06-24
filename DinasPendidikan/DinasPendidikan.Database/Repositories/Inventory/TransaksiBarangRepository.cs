@@ -2,7 +2,8 @@
 using DinasPendidikan.Shared.Models.Inventory;
 using Microsoft.EntityFrameworkCore;
 
-namespace DinasPendidikan.Database.Repositories.Inventory{
+namespace DinasPendidikan.Database.Repositories.Inventory
+{
     public interface ITransaksiBarangRepository
     {
         Task<List<TransaksiBarang>> GetAllAsync();

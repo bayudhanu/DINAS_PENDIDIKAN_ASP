@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DinasPendidikan.Shared.Models.Shared;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using DinasPendidikan.Shared.Models.Inventory;
-using DinasPendidikan.Shared.Models.Shared;
 
 namespace DinasPendidikan.Shared.Models.Users
 {
     public class User : BaseModel
     {
-       
+
         [Required]
         [MaxLength(50)]
         public string Username { get; set; } = string.Empty;

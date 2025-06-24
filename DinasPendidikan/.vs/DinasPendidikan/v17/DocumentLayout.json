@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01120A12-005B-4F9B-BDFE-06DE5C283189}|DinasPendidikan.Client\\DinasPendidikan.Client.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.client\\clientapp\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{01120A12-005B-4F9B-BDFE-06DE5C283189}|DinasPendidikan.Client\\DinasPendidikan.Client.csproj|solutionrelative:dinaspendidikan.client\\clientapp\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF8D442-318E-9A28-E9CC-9450A4ABBCEF}|DinasPendidikan.Web\\DinasPendidikan.Web.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.web\\components\\pages\\modaldialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BF8D442-318E-9A28-E9CC-9450A4ABBCEF}|DinasPendidikan.Web\\DinasPendidikan.Web.csproj|solutionrelative:dinaspendidikan.web\\components\\pages\\modaldialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B2BC32B-A25C-19F0-0F44-F212A0EFE100}|DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj|d:\\github\\dinas_pendidikan_asp\\dinaspendidikan\\dinaspendidikan.servicedefaults\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B2BC32B-A25C-19F0-0F44-F212A0EFE100}|DinasPendidikan.ServiceDefaults\\DinasPendidikan.ServiceDefaults.csproj|solutionrelative:dinaspendidikan.servicedefaults\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModalDialog.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Web\\Components\\Pages\\ModalDialog.razor",
+              "RelativeDocumentMoniker": "DinasPendidikan.Web\\Components\\Pages\\ModalDialog.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Web\\Components\\Pages\\ModalDialog.razor",
+              "RelativeToolTip": "DinasPendidikan.Web\\Components\\Pages\\ModalDialog.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAawAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-24T14:12:41.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\Extensions.cs",
+              "RelativeDocumentMoniker": "DinasPendidikan.ServiceDefaults\\Extensions.cs",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.ServiceDefaults\\Extensions.cs",
+              "RelativeToolTip": "DinasPendidikan.ServiceDefaults\\Extensions.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T14:12:34.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "package.json",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Client\\ClientApp\\package.json",
+              "RelativeDocumentMoniker": "DinasPendidikan.Client\\ClientApp\\package.json",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Client\\ClientApp\\package.json",
+              "RelativeToolTip": "DinasPendidikan.Client\\ClientApp\\package.json",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-24T14:11:48.566Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

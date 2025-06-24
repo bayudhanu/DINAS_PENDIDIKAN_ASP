@@ -1,15 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using DinasPendidikan.DokumenService.Services.SuratKeluarServices;
 using DinasPendidikan.Shared.Models.Documents;
-using DinasPendidikan.DokumenService.Services;
-using DinasPendidikan.DokumenService.Services.SuratKeluarServices;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DinasPendidikan.DokumenService.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class SuratKeluarController: ControllerBase
+    public class SuratKeluarController : ControllerBase
     {
         private readonly ISuratKeluarService _suratKeluarService;
 

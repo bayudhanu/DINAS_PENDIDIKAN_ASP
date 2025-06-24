@@ -1,5 +1,4 @@
 using DinasPendidikan.Contracts;
-using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;

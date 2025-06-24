@@ -3,7 +3,6 @@ using DinasPendidikan.Database.Repositories.Documents;
 using DinasPendidikan.DokumenService.Services.SuratKeluarServices;
 using DinasPendidikan.DokumenService.Services.SuratMasukServices;
 using Microsoft.EntityFrameworkCore;
-using DinasPendidikan.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 

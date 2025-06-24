@@ -19,7 +19,7 @@ public class DinasPendidikanDbContext : DbContext
     public DbSet<Disposisi> Disposisi { get; set; }
     public DbSet<SuratMasuk> SuratMasuk { get; set; }
     public DbSet<SuratKeluar> SuratKeluar { get; set; }
-    public DbSet<SuratKeputusan> SuratKeputusan { get; set; }   
+    public DbSet<SuratKeputusan> SuratKeputusan { get; set; }
     public DbSet<DaftarBarang> DaftarBarang { get; set; }
     public DbSet<KategoriBarang> KategoriBarang { get; set; }
     public DbSet<TransaksiBarang> TransaksiBarang { get; set; }

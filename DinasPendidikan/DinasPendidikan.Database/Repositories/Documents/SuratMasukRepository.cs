@@ -2,7 +2,8 @@
 using DinasPendidikan.Shared.Models.Documents;
 using Microsoft.EntityFrameworkCore;
 
-namespace DinasPendidikan.Database.Repositories.Documents{
+namespace DinasPendidikan.Database.Repositories.Documents
+{
     public interface ISuratMasukRepository
     {
         Task<List<SuratMasuk>> GetAllAsync();
@@ -53,4 +54,3 @@ namespace DinasPendidikan.Database.Repositories.Documents{
         }
     }
 }
-    

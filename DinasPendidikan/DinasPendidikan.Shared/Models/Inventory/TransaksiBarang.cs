@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DinasPendidikan.Shared.Models.Shared;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DinasPendidikan.Shared.Models.Shared;
 
 namespace DinasPendidikan.Shared.Models.Inventory
 {
     public class TransaksiBarang : BaseUserTrackedModel
     {
-       
+
         [Required]
         public int DaftarBarangId { get; set; }
         public DaftarBarang DaftarBarang { get; set; } = null!;

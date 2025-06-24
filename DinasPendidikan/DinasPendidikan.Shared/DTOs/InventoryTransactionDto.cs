@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DinasPendidikan.Shared.Enums;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DinasPendidikan.Shared.Enums;
 
 namespace DinasPendidikan.Shared.DTOs
 {

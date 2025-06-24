@@ -1,12 +1,8 @@
-
-
-using EnvDTE;
-
 var builder = DistributedApplication.CreateBuilder(args);
 
 var apiService = builder.AddProject<Projects.DinasPendidikan_ApiService>("api-service");
 var identityService = builder.AddProject<Projects.Identity_ApiService>("identity-service");
-    //.WithReference(builder.AddPostgres("identity-db"));
+//.WithReference(builder.AddPostgres("identity-db"));
 var dokumenService = builder.AddProject<Projects.DinasPendidikan_DokumenService>("dokumen-service");
 var asetService = builder.AddProject<Projects.DinasPendidikan_AsetService>("aset-service");
 var lpjService = builder.AddProject<Projects.DinasPendidikan_LpjService>("lpj-service");

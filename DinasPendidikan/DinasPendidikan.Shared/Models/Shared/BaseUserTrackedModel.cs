@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DinasPendidikan.Shared.Models.Users;
+﻿using DinasPendidikan.Shared.Models.Users;
 
 namespace DinasPendidikan.Shared.Models.Shared
 {

@@ -1,11 +1,6 @@
 using DinasPendidikan.Database;
-using DinasPendidikan.Database.Repositories.Documents;
 using Microsoft.EntityFrameworkCore; // Add this using directive for UseNpgsql extension method
-using DinasPendidikan.Contracts;
 using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-using System.Text;
-using System.Text.Json;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,11 +30,13 @@ builder.Services.AddCors(options =>
 });
 
 // Add services
-builder.Services.AddSingleton<IConnection>(_ => {
+builder.Services.AddSingleton<IConnection>(_ =>
+{
     var factory = new ConnectionFactory { HostName = "localhost" };
     return factory.CreateConnection();
 });
-builder.Services.AddSingleton<IModel>(serviceProvider => {
+builder.Services.AddSingleton<IModel>(serviceProvider =>
+{
     var connection = serviceProvider.GetRequiredService<IConnection>();
     return connection.CreateModel();
 });
@@ -64,7 +61,7 @@ var summaries = new[]
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

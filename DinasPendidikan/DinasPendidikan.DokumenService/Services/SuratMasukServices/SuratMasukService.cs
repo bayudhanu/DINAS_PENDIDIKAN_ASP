@@ -3,7 +3,7 @@
     public interface ISuratMasukService
     {
     }
-    public class SuratMasukService: ISuratMasukService
+    public class SuratMasukService : ISuratMasukService
     {
     }
 }

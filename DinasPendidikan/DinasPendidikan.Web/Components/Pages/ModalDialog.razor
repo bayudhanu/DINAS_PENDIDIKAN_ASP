@@ -24,7 +24,7 @@
     [Parameter] public bool IsVisible { get; set; }
     [Parameter] public bool ShowConfirmButton { get; set; } = true;
     [Parameter] public string ConfirmButtonText { get; set; } = "Simpan";
-    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
     [Parameter] public EventCallback OnConfirm { get; set; }
     [Parameter] public EventCallback OnClose { get; set; }
 
