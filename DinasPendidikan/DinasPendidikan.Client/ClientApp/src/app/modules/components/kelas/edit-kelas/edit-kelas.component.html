@@ -1,0 +1,71 @@
+<button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" (click)="onEdit()"></button>
+<p-dialog header="Edit item" [(visible)]="visible" [modal]="true" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+    [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
+    <!-- begin :: Konten Dialog -->
+    <div class="p-fluid p-formgrid grid">
+        <div class="field col-12 md:col-6">
+            <label htmlfor="kode">Kode<span class="p-error">*</span></label>
+            <input [(ngModel)]="item.kode" pinputtext="" id="kode" type="text" class="p-inputtext customInputText"
+                placeholder="Tulis kode kelas" />
+        </div>
+        <div class="field col-12 md:col-6">
+            <label htmlfor="unitSekolah">Unit Sekolah<span class="p-error">*</span></label>
+            <p-dropdown [options]="dropdownUnitSekolah" [(ngModel)]="selectedUnitSekolah" optionLabel="name"
+                [filter]="true" filterBy="name" [showClear]="true" appendTo="body" placeholder="Pilih unit sekolah">
+                <ng-template pTemplate="selectedItem">
+                    <div class="flex align-items-center gap-2" *ngIf="selectedUnitSekolah">
+                        <div>{{ selectedUnitSekolah.name }}</div>
+                    </div>
+                </ng-template>
+                <ng-template let-unitSekolah pTemplate="item">
+                    <div class="flex align-items-center gap-2">
+                        <div>{{ unitSekolah.name }}</div>
+                    </div>
+                </ng-template>
+            </p-dropdown>
+        </div>
+        <div class="field col-12 md:col-6">
+            <label htmlfor="nama">
+                Nama Kelas<span class="p-error">*</span>
+            </label>
+            <input [(ngModel)]="item.nama" pinputtext="" id="nama" type="text" class="p-inputtext customInputText"
+                placeholder="Tulis nama kelas" />
+        </div>
+        <div class="field col-12 md:col-6">
+            <label htmlfor="waliKelas">Wali Kelas<span class="p-error">*</span></label>
+            <p-dropdown [options]="dropdownWaliKelas"
+                [(ngModel)]="selectedWaliKelas"
+                optionLabel="name"
+                [filter]="true"
+                filterBy="name"
+                [showClear]="true"
+                appendTo="body"
+                placeholder="Pilih wali kelas">
+                <ng-template pTemplate="selectedItem">
+                    <div class="flex align-items-center gap-2" *ngIf="selectedWaliKelas">
+                        <div>{{ selectedWaliKelas.name }}</div>
+                    </div>
+                </ng-template>
+                <ng-template let-waliKelas pTemplate="item">
+                    <div class="flex align-items-center gap-2">
+                        <div>{{ waliKelas.name }}</div>
+                    </div>
+                </ng-template>
+            </p-dropdown>
+        </div>
+        <div class="field col-12 md:col-6">
+            <label htmlfor="kapasitasMurid">Kapasitas Murid<span class="p-error">*</span></label>
+            <input [(ngModel)]="item.kapasitasMurid" pinputtext="" id="kapasitasMurid" type="text"
+                class="p-inputtext customInputText" placeholder="Tulis kapasitas murid" />
+        </div>
+    </div>
+    <!-- end :: Konten Dialog -->
+
+    <!-- begin :: Footer Dialog -->
+    <ng-template pTemplate="footer">
+        <p-button label="Kembali" [outlined]="true" severity="blockCustomGrayButton" (onClick)="onClose()"
+            class="mr-2" />
+        <p-button label="Simpan" [outlined]="true" severity="blockCustomBlueButton" (onClick)="save()" />
+    </ng-template>
+    <!-- end :: Footer Dialog -->
+</p-dialog>

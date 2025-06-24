@@ -1,0 +1,100 @@
+/* CSS Custom Dialog (Overide Sakai Theme Setting - Local) */
+:host ::ng-deep .p-dialog .p-dialog-content {
+    background: #ffffff;
+    color: #4b5563;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 1px;
+    padding-bottom: 0;
+    scrollbar-width: thin;
+}
+
+/* CSS Custom Tabview Panel (Overide Sakai Theme Setting - Local) */
+:host ::ng-deep .p-tabview .p-tabview-panels {
+    background: #ffffff;
+    padding: 0; /* Original 1.25rem */
+    border: 0 none;
+    color: #4b5563;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+/* CSS Custom Tab Panel Container */
+.customTabPanelContainer {
+    padding: 1.5rem;
+}
+
+/* CSS Border Custom Abu-abu */
+.customBorderLeftGray {
+    border-left: solid 1px #e5e7eb;
+}
+.customBorderBottomGray {
+    border-bottom: solid 1px #e5e7eb;
+}
+
+/* begin :: CSS Custom File Upload (Overide Sakai Theme Setting - Local) */
+/* CSS Custom Buttonbar */
+:host ::ng-deep .p-fileupload .p-fileupload-buttonbar {
+    background: #ffffff; /* Original #f9fafb */
+    padding: 0; /* Original 1.25rem */
+    border: 0; /* Original 1px solid #e5e7eb */
+    color: #374151;
+    border-bottom: 0 none;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    margin-bottom: 6px;
+}
+    :host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button {
+        margin-right: 0.5rem;
+        border-radius: 2px;
+    }
+
+/* CSS Custom Button Choose (Pilih Foto) */
+:host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button.p-fileupload-choose {
+    width: 100%;
+    margin: 0;
+    border: solid 1px #22c55e; 
+    background-color: #22c55e;
+}
+    :host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button.p-fileupload-choose:hover {
+        border-color: #22c55e;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    }
+
+/* CSS Custom File Upload Content */
+:host ::ng-deep .p-fileupload .p-fileupload-content {
+    background: #ffffff;
+    padding: 1.3rem 0rem; /* Original 2rem 1rem */
+    border: 1px solid #e5e7eb;
+    color: #4b5563;
+    // border-bottom-right-radius: 6px;
+    // border-bottom-left-radius: 6px;
+    border-radius: 2px;
+}
+
+/* CSS Custom File Upload Progressbar */
+:host ::ng-deep .p-fileupload .p-progressbar {
+    height: 0; /* Original 0.25rem */
+}
+
+/* CSS Custom File Upload Row */
+:host ::ng-deep .p-fileupload-row>div {
+    flex: 1 1 auto;
+    width: auto; /* Original 25% */
+}
+
+/* CSS Custom Botton Delete File */
+:host ::ng-deep .p-button.p-button-icon-only {
+    // width: 3rem;
+    color: #ef4444;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 2px;
+    padding: 3px;
+}
+    :host ::ng-deep .p-button.p-button-icon-only:hover {
+        color: #ef4444;
+        background-color:transparent;
+        border-color: transparent;
+    }

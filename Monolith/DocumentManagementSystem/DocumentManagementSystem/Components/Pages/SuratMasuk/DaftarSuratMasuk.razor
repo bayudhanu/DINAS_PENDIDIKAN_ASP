@@ -1,8 +1,10 @@
 ﻿@page "/surat-masuk/daftar"
 @using DocumentManagementSystem.Models
 @using DocumentManagementSystem.Services
+@using Microsoft.AspNetCore.Authorization
 @inject ISuratMasukService SuratMasukService
 @inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
 
 <h3>Daftar Surat Masuk</h3>
 
@@ -10,13 +12,23 @@
     <button class="btn btn-primary" @onclick="TambahSuratMasuk">Tambah Surat Masuk</button>
     <div class="float-right">
         <input type="text" class="form-control" placeholder="Cari surat..." @bind="searchKeyword" />
-        <button class="btn btn-secondary" @onclick="SearchSurat">Cari</button>
+        <button class="btn btn-secondary" @onclick="Search">Cari</button>
     </div>
 </div>
 
-@if (suratMasukList == null)
+@if (isLoading)
 {
-    <p>Loading...</p>
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (!suratMasukList.Any())
+{
+    <div class="alert alert-info">
+        Tidak ada data surat masuk
+    </div>
 }
 else
 {
@@ -39,13 +51,13 @@ else
                     <td>@surat.NomorSurat</td>
                     <td>@surat.Perihal</td>
                     <td>@surat.TanggalSurat.ToShortDateString()</td>
-                    <td>@surat.AsalSurat</td>
-                    <td>@surat.TujuanSurat</td>
+                    <td>@surat.Pengirim</td>
+                    <td>@surat.Keterangan</td>
                     <td>@surat.Status</td>
                     <td>
-                        <button class="btn btn-sm btn-info" @onclick="() => LihatDetail(surat.Id)">Detail</button>
-                        <button class="btn btn-sm btn-warning" @onclick="() => EditSurat(surat.Id)">Edit</button>
-                        <button class="btn btn-sm btn-danger" @onclick="() => HapusSurat(surat.Id)">Hapus</button>
+                        <button class="btn btn-sm btn-info" @onclick="() => ViewSuratMasuk(surat.Id)">Detail</button>
+                        <button class="btn btn-sm btn-warning" @onclick="() => EditSuratMasuk(surat.Id)">Edit</button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => DeleteSuratMasuk(surat.Id)">Hapus</button>
                     </td>
                 </tr>
             }
@@ -55,7 +67,12 @@ else
 
 @code {
     private List<SuratMasuk> suratMasukList = new();
-    private string searchKeyword;
+    private bool isLoading = true;
+    private string searchKeyword = string.Empty;
+    private int currentPage = 1;
+    private int pageSize = 10;
+    private int totalSuratMasuk = 0;
+    private int totalPages = 1;
 
     protected override async Task OnInitializedAsync()
     {
@@ -64,7 +81,38 @@ else
 
     private async Task LoadData()
     {
-        suratMasukList = await SuratMasukService.GetAll();
+        isLoading = true;
+        StateHasChanged();
+
+        totalSuratMasuk = await SuratMasukService.GetTotalSuratMasuk();
+        totalPages = (int)Math.Ceiling((double)totalSuratMasuk / pageSize);
+
+        if (string.IsNullOrWhiteSpace(searchKeyword))
+        {
+            suratMasukList = (await SuratMasukService.GetAllSuratMasuk())
+                .Skip((currentPage - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+        }
+        else
+        {
+            suratMasukList = (await SuratMasukService.SearchSuratMasuk(searchKeyword)).ToList();
+        }
+
+        isLoading = false;
+        StateHasChanged();
+    }
+
+    private async Task Search()
+    {
+        currentPage = 1;
+        await LoadData();
+    }
+
+    private async Task ChangePage(int page)
+    {
+        currentPage = page;
+        await LoadData();
     }
 
     private void TambahSuratMasuk()
@@ -72,31 +120,33 @@ else
         NavigationManager.NavigateTo("/surat-masuk/tambah");
     }
 
-    private void LihatDetail(int id)
+    private void ViewSuratMasuk(int id)
     {
-        NavigationManager.NavigateTo($"/surat-masuk/detail/{id}");
+        NavigationManager.NavigateTo($"/surat-masuk/view/{id}");
     }
 
-    private void EditSurat(int id)
+    private void EditSuratMasuk(int id)
     {
         NavigationManager.NavigateTo($"/surat-masuk/edit/{id}");
     }
 
-    private async Task HapusSurat(int id)
+    private async Task DeleteSuratMasuk(int id)
     {
-        await SuratMasukService.Delete(id);
-        await LoadData();
-    }
-
-    private async Task SearchSurat()
-    {
-        if (!string.IsNullOrEmpty(searchKeyword))
+        bool confirm = await JSRuntime.InvokeAsync<bool>("confirm", "Apakah Anda yakin ingin menghapus surat ini?");
+        if (confirm)
         {
-            suratMasukList = await SuratMasukService.Search(searchKeyword);
-        }
-        else
-        {
+            await SuratMasukService.DeleteSuratMasuk(id);
             await LoadData();
         }
+    }
+
+    private string GetBadgeClass(string sifatSurat)
+    {
+        return sifatSurat switch
+        {
+            "Penting" => "bg-warning text-dark",
+            "Rahasia" => "bg-danger",
+            _ => "bg-primary"
+        };
     }
 }

@@ -4,13 +4,13 @@ namespace DocumentManagementSystem.Services
 {
     public interface ISuratMasukService
     {
-        Task<List<SuratMasuk>> GetAll();
-        Task<SuratMasuk> GetById(int id);
-        Task Create(SuratMasuk suratMasuk);
-        Task Update(SuratMasuk suratMasuk);
-        Task Delete(int id);
-        Task<List<SuratMasuk>> GetByStatus(StatusSurat status);
-        Task<List<SuratMasuk>> GetByDateRange(DateTime startDate, DateTime endDate);
-        Task<List<SuratMasuk>> Search(string keyword);
+        Task<IEnumerable<SuratMasuk>> GetAllSuratMasuk();
+        Task<SuratMasuk> GetSuratMasukById(int id);
+        Task CreateSuratMasuk(SuratMasuk suratMasuk);
+        Task UpdateSuratMasuk(SuratMasuk suratMasuk);
+        Task DeleteSuratMasuk(int id);
+        Task<IEnumerable<SuratMasuk>> SearchSuratMasuk(string keyword);
+        Task<int> GetTotalSuratMasuk();
+        Task<IEnumerable<SuratMasuk>> GetSuratMasukByDateRange(DateTime startDate, DateTime endDate);
     }
 }

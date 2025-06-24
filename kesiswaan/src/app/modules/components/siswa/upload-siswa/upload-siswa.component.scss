@@ -1,0 +1,55 @@
+/* begin :: CSS Custom File Upload (Overide Sakai Theme Setting - Local) */
+/* CSS Custom Buttonbar */
+:host ::ng-deep .p-fileupload .p-fileupload-buttonbar {
+    background: #f9fafb;
+    padding: 1.25rem;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+    border-bottom: 0 none;
+    border-top-right-radius: 2px; /* Original 6px */
+    border-top-left-radius: 2px; /* Original 6px */
+}
+    :host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button {
+        background-color: #ffffff;
+        color: #4b5563;
+        border: solid 1px #d1d5db;
+        border-radius: 2px;
+        margin-right: 0.5rem;
+    }
+    :host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button:hover {
+        background-color: #ffffff;
+        color: #2C8AFF;
+        border: solid 1px #2C8AFF;
+        transition: none;
+    }
+    :host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button:active {
+        background: rgba(44, 138, 255, 0.04);
+        color: #2C8AFF;
+        border: solid 1px #2C8AFF;
+    }
+
+/* CSS Custom Botton Delete File */
+:host ::ng-deep .p-button.p-button-icon-only {
+    // width: 3rem;
+    color: #ef4444;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 2px;
+    padding: 3px;
+}
+    :host ::ng-deep .p-button.p-button-icon-only:hover {
+        color: #ef4444;
+        background-color:transparent;
+        border-color: transparent;
+    }
+
+/* CSS Custom File Upload Content */
+:host ::ng-deep .p-fileupload .p-fileupload-content {
+    background: #ffffff;
+    padding: 1.5rem; /* Original 2rem 1rem */
+    border: 1px solid #e5e7eb;
+    color: #4b5563;
+    border-bottom-right-radius: 2px; /* Original 6px */
+    border-bottom-left-radius: 2px; /* Original 6px */
+}
+/* end :: CSS Custom File Upload (Overide Sakai Theme Setting - Local) */

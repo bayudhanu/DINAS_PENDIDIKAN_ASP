@@ -1,0 +1,520 @@
+.card {
+    background: var(--surface-card);
+    border: 1px solid var(--surface-border);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
+    border-radius: $borderRadius;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.p-toast {
+    &.p-toast-top-right,
+    &.p-toast-top-left,
+    &.p-toast-top-center {
+        top: 100px;
+    }
+}
+
+/* CSS Div Halaman Utama */
+.page-main {
+    background-color: #ffffff;
+}
+
+/* CSS Div Judul Halaman dan Breadcrumb */
+.page-title-breadcrumb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    border-bottom: solid 3px #2C8AFF;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+/* CSS Div Judul Halaman */
+.page-title {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* CSS Judul Halaman */
+.title-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #262626;
+}
+
+/* CSS Div Breadcrumb */
+.page-breadcrumb {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+}
+
+/* CSS Custom Breadcrumb (Overide Sakai Theme Setting) */
+.p-breadcrumb {
+    background: #ffffff;
+    border: 0 !important; /* Original 1px solid #e5e7eb */
+    border-radius: 0 !important; /* Original 6px */
+    padding: 0 !important; /* Original 1rem */
+}
+
+/* CSS Text Custom Biru */
+.text-customBlueColor {
+    color: #2C8AFF;
+}
+
+/* CSS Div Konten Halaman */
+.page-content {
+    padding: 2rem;
+}
+
+/* CSS Div Kontrol Konten */
+.page-content-control {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.75rem;
+}
+
+/* CSS Div Kontrol Kiri */
+.content-control-left {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 !important;
+}
+
+/* CSS Div Kontrol Kanan */
+.content-control-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 !important;
+}
+
+/* CSS Div Isi Konten */
+.page-content-body {
+    padding-bottom: 1rem;
+}
+
+/* begin :: CSS Custom Button (Overide Sakai Theme Setting) */
+/* CSS Custom p-button */
+.p-button:focus {
+    box-shadow: unset;
+}
+.p-button-label {
+    font-weight: 400; /* Original 700 */
+}
+
+/* CSS Button Custom Outline Abu-abu menjadi Biru */
+.p-button.p-button-outlineCustomGrayBlueButton.p-button-outlined,
+.p-buttonset.p-button-outlineCustomGrayBlueButton > .p-button.p-button-outlined,
+.p-splitbutton.p-button-outlineCustomGrayBlueButton > .p-button.p-button-outlined {
+    background-color: transparent;
+    color: #4b5563;
+    border: solid 1px #e5e7eb;
+    border-radius: 2px; /* Original 6px */
+}
+    .p-button.p-button-outlineCustomGrayBlueButton.p-button-outlined:not(:disabled):hover,
+    .p-buttonset.p-button-outlineCustomGrayBlueButton > .p-button.p-button-outlined:not(:disabled):hover,
+    .p-splitbutton.p-button-outlineCustomGrayBlueButton > .p-button.p-button-outlined:not(:disabled):hover {
+        background: transparent;
+        color: #2C8AFF;
+        border: solid 1px #2C8AFF;
+        transition: none;
+    }
+    .p-button.p-button-outlineCustomGrayBlueButton.p-button-outlined:not(:disabled):active,
+    .p-buttonset.p-button-outlineCustomGrayBlueButton > .p-button.p-button-outlined:not(:disabled):active,
+    .p-splitbutton.p-button-outlineCustomGrayBlueButton > .p-button.p-button-outlined:not(:disabled):active {
+        background: rgba(44, 138, 255, 0.04);
+        color: #2C8AFF;
+        border: solid 1px #2C8AFF;
+    }
+
+/* CSS Button Custom Blok Biru */
+.p-button.p-button-blockCustomBlueButton,
+.p-buttonset.p-button-blockCustomBlueButton > .p-button,
+.p-splitbutton.p-button-blockCustomBlueButton > .p-button {
+    background-color: #2C8AFF;
+    color: #ffffff;
+    border: solid 1px #2C8AFF;
+    border-radius: 2px; /* Original 6px */
+}
+    .p-button.p-button-blockCustomBlueButton:not(:disabled):hover,
+    .p-buttonset.p-button-blockCustomBlueButton > .p-button:not(:disabled):hover,
+    .p-splitbutton.p-button-blockCustomBlueButton > .p-button:not(:disabled):hover {
+        color: #ffffff;
+        border-color: #2C8AFF;
+        transition: none;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    }
+    .p-button.p-button-blockCustomBlueButton:not(:disabled):active,
+    .p-buttonset.p-button-blockCustomBlueButton > .p-button:not(:disabled):active,
+    .p-splitbutton.p-button-blockCustomBlueButton > .p-button:not(:disabled):active {
+        color: #ffffff;
+        border-color: #2C8AFF;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.04)), to(rgba(0, 0, 0, 0.04)));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04));
+    }
+
+/* CSS Button Custom Blok Abu-abu */
+.p-button.p-button-blockCustomGrayButton,
+.p-buttonset.p-button-blockCustomGrayButton > .p-button,
+.p-splitbutton.p-button-blockCustomGrayButton > .p-button {
+    background-color: #7E8299;
+    color: #ffffff;
+    border: solid 1px #7E8299;
+    border-radius: 2px; /* Original 6px */
+}
+    .p-button.p-button-blockCustomGrayButton:not(:disabled):hover,
+    .p-buttonset.p-button-blockCustomGrayButton > .p-button:not(:disabled):hover,
+    .p-splitbutton.p-button-blockCustomGrayButton > .p-button:not(:disabled):hover {
+        color: #ffffff;
+        border-color: #7E8299;
+        transition: none;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    }
+    .p-button.p-button-blockCustomGrayButton:not(:disabled):active,
+    .p-buttonset.p-button-blockCustomGrayButton > .p-button:not(:disabled):active,
+    .p-splitbutton.p-button-blockCustomGrayButton > .p-button:not(:disabled):active {
+        color: #ffffff;
+        border-color: #7E8299;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.04)), to(rgba(0, 0, 0, 0.04)));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04));
+    }
+/* end :: CSS Custom Button (Overide Sakai Theme Setting) */
+
+/* CSS Custom Pi Icon (Overide Sakai Theme Setting) */
+.pi {
+    font-family: 'primeicons';
+    // speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: unset; /* Original 1 */
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* CSS Custom Datatable Search (Overide Sakai Theme Setting) */
+.dtCustomSeachBox {
+    width: 250px;
+    font-family: var(--font-family);
+    font-feature-settings: var(--font-feature-settings, normal);
+    font-size: 1rem;
+    color: #4b5563;
+    background: #ffffff;
+    padding: 0.75rem 0.75rem;
+    border: solid 1px #e5e7eb; /* Original #d1d5db */
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    border-radius: 2px; /* Original 6px */
+}
+    .dtCustomSeachBox:enabled:hover {
+        border-color: #2C8AFF; /* Original #6366F1 */
+    }
+    .dtCustomSeachBox:enabled:focus {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: unset !important; /* Original 0 0 0 0.2rem #C7D2FE */
+        border-color: #2C8AFF; /* Original #6366F1 */
+    }
+    .p-input-icon-left > .dtCustomSeachBox {
+        padding-left: 2.5rem !important;
+    }
+
+/* begin :: CSS Custom Dropdown (Overide Sakai Theme Setting) */
+/* CSS Custom Dropdown Button */
+.p-dropdown {
+    background: #ffffff;
+    border: solid 1px #e5e7eb; /* Original #d1d5db */
+    transition: none; /* Original background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s */
+    border-radius: 2px; /* Original 6px */
+}
+    .p-dropdown:not(.p-disabled):hover {
+        border-color: #2C8AFF; /* Original #6366F1 */
+    }
+    .p-dropdown:not(.p-disabled).p-focus {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: unset; /* Original 0 0 0 0.2rem #C7D2FE */
+        border-color: #2C8AFF; /* Original #6366F1 */
+    }
+    .p-dropdown .p-dropdown-label.p-placeholder {
+        color: #4b5563; /* Original #6b7280 */
+    }
+
+/* CSS Custom Dropdown Panel */
+.p-dropdown-panel {
+    margin-top: 2px;
+    margin-bottom: 3px;
+    background: #ffffff;
+    color: #4b5563;
+    border: solid 1px #e5e7eb; /* Original 0 none */
+    border-radius: 2px; /* Original 6px */
+    box-shadow: unset; /* Original 0 2px 12px 0 rgba(0, 0, 0, 0.1) */
+}
+    .p-dropdown-panel .p-dropdown-header .p-dropdown-filter {
+        padding-right: 1.75rem;
+        margin-right: -1.75rem;
+        border-radius: 6px;
+    }
+    .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+        color: #2C8AFF; /* Original #4338CA */
+        background: #EEF2FF;
+    }
+    
+/* CSS Custom Dropdown Items Wrapper */
+.p-dropdown-items-wrapper {
+    scrollbar-width: thin !important;
+}
+/* end :: CSS Custom Dropdown (Overide Sakai Theme Setting) */
+
+/* begin :: CSS Custom Dialog (Overide Sakai Theme Setting) */
+/* CSS Custom Dialog Header */
+.p-dialog .p-dialog-header {
+    border-bottom: solid 3px #2C8AFF; /* Original 0 none */
+    background: #ffffff;
+    color: #262626; /* Original #374151 */
+    padding: 1.5rem;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+    .p-dialog .p-dialog-header .p-dialog-title {
+        font-size: 16px; /* Original 1.25rem */
+        font-weight: 600; /* Original 700 */
+    }
+    .p-dialog .p-dialog-header .p-dialog-header-icon {
+        width: 2rem;
+        height: 2rem;
+        color: #6b7280;
+        border: 0 none;
+        background: transparent;
+        border-radius: 50%;
+        transition: unset; /* Original background-color 0.2s, color 0.2s, box-shadow 0.2s */
+        margin-right: 0; /* Original 0.5rem */
+    }
+        .p-dialog .p-dialog-header .p-dialog-header-icon:enabled:hover {
+            color: #374151;
+            border-color: transparent;
+            background: transparent; /* Original #f3f4f6 */
+        }
+
+/* CSS Custom Dialog Kontent */
+.p-dialog .p-dialog-content {
+    background: #ffffff;
+    color: #4b5563;
+    padding: 1.5rem; /* Original 0 1.5rem 2rem 1.5rem */
+    scrollbar-width: thin !important;
+}
+
+/* CSS Custom Dialog Footer */
+.p-dialog .p-dialog-footer {
+    border-top: solid 1px #e5e7eb; /* Original 0 none */
+    background: #ffffff;
+    color: #4b5563;
+    padding: 1.5rem; /* Original 0 1.5rem 1.5rem 1.5rem */
+    text-align: right;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+    .p-dialog .p-dialog-footer button {
+        margin: 0; /* Original 0 0.5rem 0 0 */
+        width: auto;
+    }
+/* end :: CSS Custom Dialog (Overide Sakai Theme Setting) */
+
+/* begin :: CSS Custom Input Text (Overide Sakai Theme Setting) */
+/* CSS Custom p-inputtext */
+.p-inputtext {
+    border-radius: 2px;
+}
+    .p-inputtext:enabled:hover {
+        border-color: #2C8AFF; /* Original #6366F1 */
+    }
+    .p-inputtext:enabled:focus {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: unset; /* Original 0 0 0 0.2rem #C7D2FE */
+        border-color: #2C8AFF; /* Original #6366F1 */
+    }
+
+/*  CSS Custom Input Text */
+.p-inputtext.customInputText {
+    height: 33.54px;
+    font-family: var(--font-family);
+    font-feature-settings: var(--font-feature-settings, normal);
+    font-size: 12px; /* Original 1rem */
+    color: #4b5563;
+    background: #ffffff;
+    padding: 0.75rem 0.75rem;
+    border: 1px solid #e5e7eb; /* Original #d1d5db */
+    transition: none; /* Original background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s */
+    appearance: none;
+    border-radius: 2px; /* Original 6px */
+}
+    .p-inputtext.customInputText:enabled:hover {
+        border-color: #2C8AFF; /* Original #6366F1 */
+    }
+    .p-inputtext.customInputText:enabled:focus {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: unset; /* Original 0 0 0 0.2rem #C7D2FE */
+        border-color: #2C8AFF; /* Original #6366F1 */
+    }
+/* end :: CSS Custom Input Text (Overide Sakai Theme Setting) */
+
+/* begin :: CSS Custom Tabview (Overide Sakai Theme Setting) */
+/* CSS Custom Tabview Nav */
+.p-tabview .p-tabview-nav {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-width: 0 0 1px 0; /* Original 0 0 2px 0 */
+    padding-left: 1.5rem;
+}
+    .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+        border: solid #e5e7eb;
+        border-width: 0 0 1px 0; /* Original 0 0 2px 0 */
+        border-color: transparent transparent #e5e7eb transparent;
+        background: #ffffff;
+        color: #4b5563; /* Original #6b7280 */
+        padding: 1.25rem;
+        font-weight: 600; /* Original 700 */
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        transition: box-shadow 0.2s;
+        margin: 0 0 -1px 0; /* Original 0 0 -2px 0 */
+    }
+    .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+        background: #ffffff;
+        border-color: #4b5563; /* Original #6366F1 */
+        color: #2C8AFF; /* Original #6366F1 */
+    }
+
+/* CSS Custom Tabview Panel */
+.p-tabview .p-tabview-panels {
+    background: #ffffff;
+    padding: 1.5rem; /* Original 1.25rem */
+    border: 0 none;
+    color: #4b5563;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+/* end :: CSS Custom Tabview (Overide Sakai Theme Setting) */
+
+/* begin :: CSS Custom Split Button (Overide Sakai Theme Setting) */
+/* CSS Split Button Custom Outline Abu-abu menjadi Biru */
+.p-splitbutton.outlineCustomGrayBlueSplitButton > .p-button {
+    background-color: transparent;
+    color: #4b5563;
+    border-color: #e5e7eb;
+}
+    .p-splitbutton.outlineCustomGrayBlueSplitButton > .p-button:not(:disabled):hover {
+        background-color: transparent;
+        color: #2C8AFF;
+    }
+    .p-splitbutton.outlineCustomGrayBlueSplitButton > .p-button:not(:disabled):active {
+        background: rgba(44, 138, 255, 0.04);
+        color: #2C8AFF;
+    }
+
+.p-splitbutton .p-splitbutton-defaultbutton, .p-splitbutton.p-button-rounded>.p-splitbutton-defaultbutton.p-button, .p-splitbutton.p-button-outlined>.p-splitbutton-defaultbutton.p-button {
+    flex: 1 1 auto;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0 none;
+}
+.p-splitbutton-menubutton, .p-splitbutton.p-button-rounded>.p-splitbutton-menubutton.p-button, .p-splitbutton.p-button-outlined>.p-splitbutton-menubutton.p-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+/* CSS Custom Split Button Tiredmenu */
+.p-tieredmenu {
+    margin-top: 2px;
+    padding: 0.5rem 0;
+    background: #ffffff;
+    color: #4b5563;
+    border: 1px solid #e5e7eb;
+    border-radius: 2px; /* Original 6px */
+    width: auto; /* Original 12.5rem */
+}
+    .p-tieredmenu.p-tieredmenu-overlay {
+        box-shadow: unset; /* Original 0 2px 12px 0 rgba(0, 0, 0, 0.1) */
+    }
+/* end :: CSS Custom Split Button (Overide Sakai Theme Setting) */
+
+/* CSS Custom p-input-icon-right (Overide Sakai Theme Setting) */
+.p-input-icon-right > .p-icon-wrapper,
+.p-input-icon-right > i:last-of-type {
+    right: 1rem; /* Original 0.75rem */
+    color: #6b7280;
+}
+
+/* CSS Custom Password Panel (Overide Sakai Theme Setting) */
+.p-password-panel {
+    padding: 1.25rem;
+    background: #ffffff;
+    color: #4b5563;
+    border: 0 none;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2px; /* Original 6px */
+}
+
+/* CSS Custom Radio Button (Overide Sakai Theme Setting) */
+.p-radiobutton {
+    width: auto; /* Original 22px */
+    height: auto; /* Original 22px */
+}
+    .p-radiobutton .p-radiobutton-box {
+        border: 1px solid #e5e7eb; /* Original 2px solid #d1d5db */
+        background: #ffffff;
+        width: 14px; /* Original 22px */
+        height: 14px; /* Original 22px */
+        color: #4b5563;
+        border-radius: 50%;
+        transition: unset; /* Original background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s */
+    }
+        .p-radiobutton .p-radiobutton-box:not(.p-disabled):not(.p-highlight):hover {
+            // border-color: #6366F1;
+            border: solid 3px #2C8AFF;
+        }
+        .p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus {
+            outline: 0 none;
+            outline-offset: 0;
+            box-shadow: unset; /* Original 0 0 0 0.2rem #C7D2FE */
+            border-color: #2C8AFF; /* Original #6366F1 */
+        }
+        .p-radiobutton .p-radiobutton-box .p-radiobutton-icon {
+            width: 8px; /* Original 12px */
+            height: 8px; /* Original 12px */
+            transition-duration: 0.2s;
+            background-color: #ffffff;
+        }
+        .p-radiobutton .p-radiobutton-box.p-highlight {
+            // border-color: #6366F1;
+            // background: #6366F1;
+            border: solid 3px #2C8AFF;
+        }
+        .p-radiobutton .p-radiobutton-box.p-highlight:not(.p-disabled):hover {
+            // border-color: #4338CA;
+            // background: #4338CA;
+            // color: #ffffff;
+            border: solid 3px #2C8AFF;
+        }

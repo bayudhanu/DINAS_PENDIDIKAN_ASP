@@ -4,24 +4,25 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+	<SkipNodeModulesCleanup>false</SkipNodeModulesCleanup>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="libman.json.bak" />
+    <Content Include="package.json.old" />
+  </ItemGroup>
 	<ItemGroup>
-		<Folder Include="wwwroot\compiled\" />
-		<Folder Include="wwwroot\css\" />
-		<Folder Include="wwwroot\extensions\" />
-		<Folder Include="wwwroot\extensions\apexcharts\" />
-		<Folder Include="wwwroot\images\" />
-		<Folder Include="wwwroot\js\" />
-		<Folder Include="wwwroot\static\" />
-		<Folder Include="wwwroot\vendors\" />
+		<Content Update="wwwroot\**\*" CopyToOutputDirectory="PreserveNewest" />
+		<Content Include="node_modules\**\*" />
 	</ItemGroup>
-
 	<ItemGroup>
 		<Folder Include="Repositories\" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.NodeServices" Version="3.1.32" Condition="'$(Configuration)' == 'Debug'" />
+	  <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
 	  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.16" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.5" />
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
@@ -31,4 +32,63 @@
 	  </PackageReference>
 	</ItemGroup>
 
+  <!-- NPM Build Targets with Comprehensive Error Handling -->
+  <Target Name="CheckNodeInstallation" BeforeTargets="NpmInstall">
+    <Message Importance="high" Text="Memeriksa instalasi Node.js..." />
+    
+    <Exec Command="node --version" ContinueOnError="true" EchoOff="true" IgnoreExitCode="true">
+      <Output TaskParameter="ExitCode" PropertyName="NodeExitCode" />
+      <Output TaskParameter="ConsoleOutput" PropertyName="NodeVersion" />
+    </Exec>
+    
+    <Exec Command="npm --version" ContinueOnError="true" EchoOff="true" IgnoreExitCode="true">
+      <Output TaskParameter="ExitCode" PropertyName="NpmExitCode" />
+      <Output TaskParameter="ConsoleOutput" PropertyName="NpmVersion" />
+    </Exec>
+    
+    <Error Condition="'$(NodeExitCode)' != '0'" Text="Node.js tidak terinstall. Versi minimal v16.13+ diperlukan. Download dari https://nodejs.org/" />
+    
+    <Error Condition="'$(NpmExitCode)' != '0'" Text="NPM tidak terinstall. Pastikan Node.js terinstall dengan benar." />
+    
+    <Warning Condition="'$(NodeVersion)' != '' And '$(NpmVersion)' != ''" Text="Menggunakan Node.js $(NodeVersion) dan NPM $(NpmVersion)" />
+  </Target>
+
+	<Target Name="NpmInstall" BeforeTargets="Build" Condition="Exists('$(ProjectDir)package.json')">
+		<PropertyGroup>
+			<NpmCommand Condition="'$(OS)' == 'Windows_NT'">npm.cmd</NpmCommand>
+			<NpmCommand Condition="'$(OS)' != 'Windows_NT'">npm</NpmCommand>
+			<NpmInstallLog>$(ProjectDir)npm_install.log</NpmInstallLog>
+		</PropertyGroup>
+
+		<Message Importance="high" Text="Menjalankan npm install di $(ProjectDir)" />
+
+		<!-- Clean previous installation -->
+		<Delete Files="$(NpmInstallLog)" Condition="Exists('$(NpmInstallLog)')" />
+
+		<!-- Install with comprehensive logging -->
+		<Exec Command="$(NpmCommand) install copyfiles rimraf --no-audit --legacy-peer-deps 2&gt;&amp;1 | tee $(NpmInstallLog)" WorkingDirectory="$(ProjectDir)" IgnoreExitCode="true">
+			<Output TaskParameter="ExitCode" PropertyName="NpmInstallExitCode" />
+		</Exec>
+		<!-- Jalankan dengan error handling -->
+		<Exec Command="$(NpmCommand) run copy-assets -- --force" WorkingDirectory="$(ProjectDir)" IgnoreExitCode="true">
+			<Output TaskParameter="ExitCode" PropertyName="CopyAssetsExitCode" />
+		</Exec>
+		<!-- Alternative error detection without Contains() -->
+		<PropertyGroup>
+			<NpmErrorFound>false</NpmErrorFound>
+			<NpmInstallLogContent Condition="Exists('$(NpmInstallLog)')">$([System.IO.File]::ReadAllText('$(NpmInstallLog)'))</NpmInstallLogContent>
+			<NpmErrorFound Condition="$(NpmInstallLogContent.Contains('ERR!'))">true</NpmErrorFound>
+			<NpmErrorFound Condition="$(NpmInstallLogContent.Contains('failed'))">true</NpmErrorFound>
+			<NpmErrorFound Condition="$(NpmInstallLogContent.Contains('error'))">true</NpmErrorFound>
+		</PropertyGroup>
+
+		<!-- Error handling -->
+		<Error Condition="'$(NpmInstallExitCode)' != '0' And '$(NpmErrorFound)' == 'true'" Text="NPM install gagal. Periksa $(NpmInstallLog) untuk detail error." />
+
+		<Warning Condition="'$(NpmInstallExitCode)' != '0' And '$(NpmErrorFound)' != 'true'" Text="NPM install mengembalikan kode error $(NpmInstallExitCode) tapi tidak ada error yang terdeteksi." />
+
+		<Message Importance="high" Text="NPM install berhasil" Condition="'$(NpmInstallExitCode)' == '0'" />
+	</Target>
+	
 </Project>
+	

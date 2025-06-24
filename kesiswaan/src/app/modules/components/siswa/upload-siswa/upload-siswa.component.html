@@ -1,0 +1,23 @@
+<!-- begin :: Konten Dialog -->
+<div class="mb-2">
+    <label htmlfor="uploadFile">Pilih file yang akan di upload<span class="p-error">*</span></label>    
+</div>
+<div class="mb-5">
+    <p-fileUpload 
+        name="file" 
+        url="{{URL}}" 
+        chooseLabel="Pilih File"
+        cancelLabel="Reset"
+        (onUpload)="onUpload($event)"
+        [multiple]="false" 
+        [auto]="false"
+        accept=".xls, .xlsx" 
+        [maxFileSize]="1000000">
+        <ng-template pTemplate="content">
+            <ul *ngIf="uploadFiles.length">
+                <li *ngFor="let uploadFile of uploadFiles">{{uploadFile.createdDate}}, File {{uploadFile.file.name}} - {{uploadFile.file.size}} bytes has been sucessfully upload.</li>
+            </ul>
+        </ng-template>
+    </p-fileUpload>
+</div>
+<!-- end :: Konten Dialog -->

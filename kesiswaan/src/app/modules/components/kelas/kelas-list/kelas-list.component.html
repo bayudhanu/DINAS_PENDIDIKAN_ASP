@@ -1,0 +1,189 @@
+<!-- begin :: Halaman List Siswa -->
+<div class="page-main">
+    <!-- begin :: Div Judul Halaman dan Breadcrumb -->
+    <div class="page-title-breadcrumb">
+        <!-- begin :: Div Judul Halaman -->
+        <div class="page-title">
+            <span class="title-name">
+                MASTER DATA KELAS
+            </span>
+        </div>
+        <!-- end :: Div Judul Halaman -->
+
+        <!-- begin :: Div Breadcrumb -->
+        <div class="page-breadcrumb">
+            <p-breadcrumb class="max-w-full" [model]="breadcrumbItems">
+                <ng-template pTemplate="item" let-item>
+                    <ng-container *ngIf="item.route; else elseBlock">
+                        <a [routerLink]="item.route" class="p-menuitem-link">
+                            <span [ngClass]="[item.icon ? item.icon : '', 'text-customBlueColor']"></span>
+                            <span class="text-customBlueColor">{{ item.label }}</span>
+                        </a>
+                    </ng-container>
+                    <ng-template #elseBlock>
+                        <a [href]="item.url">
+                            <span class="text-color">{{ item.label }}</span>
+                        </a>
+                    </ng-template>
+                </ng-template>
+            </p-breadcrumb>
+        </div>
+        <!-- end :: Div Breadcrumb -->
+    </div>
+    <!-- end :: Div Judul Halaman dan Breadcrumb -->
+
+    <!-- begin :: Div Konten Halaman -->
+    <div class="page-content">
+        <!-- begin :: Div Kontrol Konten -->
+        <div class="page-content-control">
+            <!-- begin :: Div Kontrol Kiri -->
+            <div class="content-control-left">
+                <p-button icon="pi pi-filter-slash" label="Reset Filter" [outlined]="true" severity="outlineCustomGrayBlueButton" (click)="clear(dt1)" />
+                <span class="p-input-icon-left ml-2">
+                    <i class="pi pi-search"></i>
+                    <input type="text" #filter (input)="onGlobalFilter(dt1, $event)" placeholder="Cari" class="dtCustomSeachBox" />
+                </span>
+            </div>
+            <!-- end :: Div Kontrol Kiri -->
+
+            <!-- begin :: Div Kontrol Kanan -->
+            <div class="content-control-right">
+                <app-add-siswa></app-add-siswa>
+                <app-upload-kelas></app-upload-kelas>
+                <!-- <p-splitButton icon="pi pi-bars" label="Option" [model]="dropdownOptionButton" appendTo="body" styleClass="outlineCustomGrayBlueSplitButton ml-2"></p-splitButton> -->
+
+            </div>
+            <!-- end :: Div Kontrol Kanan -->
+        </div>
+        <!-- end :: Div Kontrol Konten -->
+
+        <!-- begin :: Div Isi Konten -->
+        <div class="page-content-body">
+            <!-- begin :: List Siswa Datatable -->
+            <p-table #dt1 [value]="values"
+                dataKey="id" [rows]="10"
+                [loading]="loading"
+                [rowHover]="true"
+                styleClass="p-datatable-gridlines"
+                [paginator]="true"
+                [globalFilterFields]="columns"
+                [rowsPerPageOptions]="[10,25,50]"
+                [responsive]="true"
+                [resizableColumns]="true"
+                [scrollable]="true"
+                [scrollHeight]="'calc(100vh - 300px)'"
+                [scrollableX]="true"
+                [scrollableY]="true"
+                [autoLayout]="true"
+                [showCurrentPageReport]="true"
+                [currentPageReportTemplate]="'{totalRecords} records'"
+                [lazy]="true"
+                (onLazyLoad)="onLazyLoad($event)"
+                [totalRecords]="totalRecords"
+                [loadingIcon]="'pi pi-spinner'"
+                [loadingIconPos]="'center'"
+                [loadingText]="'Loading datas data. Please wait.'"
+                [loadingOptions]="{ 'text': 'Loading datas data. Please wait.' }"
+                responsiveLayout="scroll">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th style="min-width: 12rem">
+                            <div class="flex justify-content-between align-items-center">
+                                Kode
+                                <p-columnFilter type="text" field="kode" display="menu"
+                                    placeholder="Search by kode"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th style="min-width: 12rem">
+                            <div class="flex justify-content-between align-items-center">
+                                Nama
+                                <p-columnFilter type="text" field="nama" display="menu"
+                                    placeholder="Search by nama"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th style="min-width: 12rem">
+                            <div class="flex justify-content-between align-items-center">
+                                Unit Sekolah
+                                <p-columnFilter type="text" field="unitSekolah" display="menu"
+                                    placeholder="Search by unit sekolah"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th style="min-width: 10rem">
+                            <div class="flex justify-content-between align-items-center">
+                                Wali Kelas
+                                <p-columnFilter type="string" field="waliKelas" display="menu"></p-columnFilter>
+                            </div>
+                        </th>
+
+                        <th style="min-width: 10rem">
+                            <div class="flex justify-content-between align-items-center">
+                                Kapasitas Murid
+                                <p-columnFilter type="string" field="waliKelas" display="menu"></p-columnFilter>
+                            </div>
+                        </th>
+
+                        <th style="min-width: 4rem">
+                            <div class="flex justify-content-between align-items-center">
+                                Status
+                                <p-columnFilter field="status" matchMode="equals" display="menu">
+                                    <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                                        <p-dropdown [ngModel]="value" [options]="statuses" (onChange)="filter($event.value)"
+                                            placeholder="Any" [style]="{'min-width': '12rem'}">
+                                            <ng-template let-option pTemplate="item">
+                                                <span [class]="'data-badge status-' + option.value">{{option.label}}</span>
+                                            </ng-template>
+                                        </p-dropdown>
+                                    </ng-template>
+                                </p-columnFilter>
+                            </div>
+                        </th>
+                        <th>Aksi</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-kelas>
+                    <tr>
+                        <td>
+                            {{kelas.kode}}
+                        </td>
+                        <td>
+                            <span class="image-text ml-2">{{kelas.nama}}</span>
+                        </td>
+                        <td>
+                            <span class="image-text ml-2">{{kelas.unitSekolah}}</span>
+                        </td>
+                        <td>
+                            <span class="image-text ml-2">{{kelas.namaWaliKelas}}</span>
+                        </td>
+                        <td>
+                            <span class="image-text ml-2">{{kelas.kapasitasMurid}} Siswa</span>
+                        </td>
+                        <td class="text-center">
+                            <i class="pi ml-2"
+                                [ngClass]="{'true-icon pi-check-circle text-green-500': kelas.status, 'false-icon pi-times-circle text-pink-500': !kelas.status}"></i>
+                        </td>
+                        <td>
+                            <div class="flex">
+                                <app-edit-kelas [item]="kelas" (itemChange)="onItemChange($event)"></app-edit-kelas>
+                                <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="onDelete(kelas)"></button>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="emptymessage">
+                    <tr>
+                        <td colspan="8">No datas found.</td>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="loadingbody">
+                    <tr>
+                        <td colspan="8">Loading datas data. Please wait.</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+            <!-- end :: List Siswa Datatable -->
+        </div>
+        <!-- end :: Div Isi Konten -->
+    </div>
+    <!-- end :: Div Konten Halaman -->
+</div>
+<!-- end :: Halaman List Siswa -->

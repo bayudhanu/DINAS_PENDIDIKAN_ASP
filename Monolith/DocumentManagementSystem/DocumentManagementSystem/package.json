@@ -1,0 +1,40 @@
+{
+  "name": "document-management-system",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "install-deps": "npm install && npm run copy-assets",
+    "copy-assets": "copyfiles -f node_modules/**/** wwwroot/assets/",
+    "clean": "rimraf wwwroot/assets/*"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "apexcharts": "^4.7.0",
+    "bootstrap": "^5.3.7",
+    "bootstrap-icons": "^1.13.1",
+    "chart.js": "^4.5.0",
+    "choices": "^0.1.3",
+    "datatables": "^1.10.18",
+    "docx": "^9.5.1",
+    "fontawesome": "^5.6.3",
+    "jquery": "^3.7.1",
+    "jquery-validation": "^1.21.0",
+    "modal": "^0.3.7",
+    "quill": "^2.0.3",
+    "summernote": "^0.9.1",
+    "sweetalert2": "^11.6.13",
+    "toastify": "^2.0.1"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "css-loader": "^6.8.1",
+    "rimraf": "^5.0.1",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

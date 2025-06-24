@@ -1,3 +1,7 @@
+
+
+using EnvDTE;
+
 var builder = DistributedApplication.CreateBuilder(args);
 
 var apiService = builder.AddProject<Projects.DinasPendidikan_ApiService>("api-service");
@@ -7,6 +11,7 @@ var dokumenService = builder.AddProject<Projects.DinasPendidikan_DokumenService>
 var asetService = builder.AddProject<Projects.DinasPendidikan_AsetService>("aset-service");
 var lpjService = builder.AddProject<Projects.DinasPendidikan_LpjService>("lpj-service");
 var schedulerService = builder.AddProject<Projects.DinasPendidikan_SchedulerService>("scheduler-service");
+
 builder.AddProject<Projects.DinasPendidikan_Web>("web-frontend")
     .WithExternalHttpEndpoints()
     .WithReference(identityService)
@@ -15,5 +20,28 @@ builder.AddProject<Projects.DinasPendidikan_Web>("web-frontend")
     .WithReference(asetService)
     .WithReference(lpjService)
     .WithReference(schedulerService);
+
+// Add Angular frontend
+builder.AddProject<Projects.DinasPendidikan_Client>("angular")
+    .WithExternalHttpEndpoints()
+    .WithReference(identityService)
+    .WithReference(apiService)
+    .WithReference(dokumenService)
+    .WithReference(asetService)
+    .WithReference(lpjService)
+    .WithReference(schedulerService)
+    .AsHttp2Service();
+/*
+builder.AddNpmApp("angular", "../DinasPendidikan.Client", "start")
+    .WithExternalHttpEndpoints()
+    .WithReference(identityService)
+    .WithReference(apiService)
+    .WithReference(dokumenService)
+    .WithReference(asetService)
+    .WithReference(lpjService)
+    .WithReference(schedulerService)
+    .WithEndpoint(targetPort: 4200, scheme: "http", env: "PORT")
+    .AsHttp2Service();
+*/
 
 builder.Build().Run();

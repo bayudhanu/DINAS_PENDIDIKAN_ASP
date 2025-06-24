@@ -1,0 +1,207 @@
+﻿@using DocumentManagementSystem.Models
+@using DocumentManagementSystem.Services
+@using Microsoft.AspNetCore.Components.Forms
+@inject ISuratMasukService SuratMasukService
+@inject IFileUploadService FileUploadService
+@inject IJSRuntime JSRuntime
+
+
+<button style="margin-left:180px;align:right;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahSuratModal" @onclick="ShowModal">
+    <i class="bi bi-plus-circle"></i> Tambah Surat
+</button>
+@if (showModal)
+{
+    <div class="modal fade show" id="tambahSuratModal" style="display: block; background-color: rgba(0,0,0,0.5)" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tambah Surat Masuk</h5>
+                    <button type="button" class="btn-close" @onclick="CloseModal"></button>
+                </div>
+                <div class="modal-body">
+                    <EditForm Model="@surat" OnValidSubmit="@HandleValidSubmit">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="nomorSurat">Nomor Surat *</label>
+                                    <InputText id="nomorSurat" class="form-control" @bind-Value="surat.NomorSurat" />
+                                    <ValidationMessage For="@(() => surat.NomorSurat)" />
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="perihal">Perihal *</label>
+                                    <InputText id="perihal" class="form-control" @bind-Value="surat.Perihal" />
+                                    <ValidationMessage For="@(() => surat.Perihal)" />
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="pengirim">Pengirim *</label>
+                                    <InputText id="pengirim" class="form-control" @bind-Value="surat.Pengirim" />
+                                    <ValidationMessage For="@(() => surat.Pengirim)" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="sifatSurat">Sifat Surat *</label>
+                                    <InputSelect id="sifatSurat" class="form-control" @bind-Value="surat.SifatSurat">
+                                        <option value="">-- Pilih Sifat Surat --</option>
+                                        <option value="Biasa">Biasa</option>
+                                        <option value="Penting">Penting</option>
+                                        <option value="Rahasia">Rahasia</option>
+                                    </InputSelect>
+                                    <ValidationMessage For="@(() => surat.SifatSurat)" />
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="tanggalSurat">Tanggal Surat *</label>
+                                    <InputDate id="tanggalSurat" class="form-control" @bind-Value="surat.TanggalSurat" />
+                                    <ValidationMessage For="@(() => surat.TanggalSurat)" />
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="tanggalDiterima">Tanggal Diterima *</label>
+                                    <InputDate id="tanggalDiterima" class="form-control" @bind-Value="surat.TanggalDiterima" />
+                                    <ValidationMessage For="@(() => surat.TanggalDiterima)" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="keterangan">Keterangan</label>
+                            <InputTextArea id="keterangan" class="form-control" @bind-Value="surat.Keterangan" rows="3" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="fileSurat">File Surat</label>
+                            <InputFile id="fileSurat" class="form-control" OnChange="@HandleFileUpload" />
+                            @if (!string.IsNullOrEmpty(surat.FilePath))
+                            {
+                                <div class="mt-2">
+                                    <small>File terpilih: @Path.GetFileName(surat.FilePath)</small>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" disabled="@isSaving">
+                                @if (isSaving)
+                                {
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <span> Menyimpan...</span>
+                                }
+                                else
+                                {
+                                    <span><i class="fas fa-save"></i> Simpan</span>
+                                }
+                            </button>
+                            <button type="button" class="btn btn-secondary" @onclick="CloseModal" disabled="@isSaving">
+                                <i class="fas fa-times"></i> Batal
+                            </button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private bool showModal = false;
+    private bool isSaving = false;
+    private SuratMasuk surat = new();
+    private string errorMessage = "";
+    
+    [Parameter]
+    public EventCallback OnSuratAdded { get; set; }
+
+    protected override void OnInitialized()
+    {
+        surat.TanggalSurat = DateTime.Now;
+        surat.TanggalDiterima = DateTime.Now;
+    }
+
+    private void ShowModal()
+    {
+        showModal = true;
+        StateHasChanged();
+    }
+
+    private void CloseModal()
+    {
+        if (!isSaving)
+        {
+            showModal = false;
+            ResetForm();
+            StateHasChanged();
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        isSaving = true;
+        StateHasChanged();
+
+        try
+        {
+            // Upload file jika ada
+            if (surat.FileSurat != null)
+            {
+                using var stream = surat.FileSurat.OpenReadStream();
+                surat.FilePath = await FileUploadService.UploadFileAsync(stream, surat.FileSurat.FileName);
+            }
+
+            await SuratMasukService.CreateSuratMasuk(surat);
+
+            // Tutup modal dan reset form
+            showModal = false;
+            ResetForm();
+
+            // Panggil callback untuk refresh data parent
+            await OnSuratAdded.InvokeAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+            // Tambahkan notifikasi error jika diperlukan
+        }
+        finally
+        {
+            isSaving = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task HandleFileUpload(InputFileChangeEventArgs e)
+    {
+        var file = e.GetMultipleFiles(1)[0];
+        var allowedExtensions = new[] { ".pdf", ".doc", ".docx" };
+        var extension = Path.GetExtension(file.Name);
+
+        if (!allowedExtensions.Contains(extension.ToLower()))
+        {
+            // Tampilkan error ke user
+            errorMessage = "Hanya file PDF atau Word yang diizinkan";
+            return;
+        }
+
+        // Convert IBrowserFile to a stream and store it in a custom property
+        using var stream = file.OpenReadStream();
+        surat.FileSuratStream = stream; // Add a new property in the SuratMasuk class to hold the stream
+        surat.FileSuratName = file.Name; // Add a new property to hold the file name
+
+        StateHasChanged();
+    }
+
+    private void ResetForm()
+    {
+        surat = new SuratMasuk
+        {
+            TanggalSurat = DateTime.Now,
+            TanggalDiterima = DateTime.Now
+        };
+    }
+}

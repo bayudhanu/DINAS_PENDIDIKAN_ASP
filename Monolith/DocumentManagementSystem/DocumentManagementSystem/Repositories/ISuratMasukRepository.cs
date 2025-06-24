@@ -12,5 +12,6 @@ namespace DocumentManagementSystem.Repositories
         Task<IEnumerable<SuratMasuk>> GetByStatus(StatusSurat status);
         Task<IEnumerable<SuratMasuk>> GetByDateRange(DateTime startDate, DateTime endDate);
         Task<IEnumerable<SuratMasuk>> Search(string keyword);
+        Task<int> GetTotalCount();
     }
 }

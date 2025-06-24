@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>087ad92b-d543-45b7-be24-e6ef8cee03d7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Identity.ApiService\Identity.ApiService.csproj" />
+    <ProjectReference Include="..\DinasPendidikan.Web\DinasPendidikan.Web.csproj" />
+    <ProjectReference Include="..\DinasPendidikan.ApiService\DinasPendidikan.ApiService.csproj" />
+    <ProjectReference Include="..\DinasPendidikan.DokumenService\DinasPendidikan.DokumenService.csproj" />
+    <ProjectReference Include="..\DinasPendidikan.AsetService\DinasPendidikan.AsetService.csproj" />
+    <ProjectReference Include="..\DinasPendidikan.LpjService\DinasPendidikan.LpjService.csproj" />
+    <ProjectReference Include="..\DinasPendidikan.SchedulerService\DinasPendidikan.SchedulerService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.NodeJs" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.Orchestration.linux-x64" Version="9.3.1" />
+    <PackageReference Include="EnvDTE" Version="17.14.40260" />
+    <PackageReference Include="envdte80" Version="17.14.40260" />
+  </ItemGroup>
+
+</Project>

@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Identity.ApiService/1.0.0": {
         "dependencies": {
-          "Duende.IdentityServer": "7.2.3",
+          "Duende.IdentityServer": "7.2.4",
           "Duende.IdentityServer.EntityFramework": "7.2.3",
           "Microsoft.AspNetCore.OpenApi": "8.0.16",
           "Swashbuckle.AspNetCore": "8.1.2"
@@ -25,21 +25,21 @@
           }
         }
       },
-      "Duende.IdentityServer/7.2.3": {
+      "Duende.IdentityServer/7.2.4": {
         "dependencies": {
-          "Duende.IdentityServer.Storage": "7.2.3",
+          "Duende.IdentityServer.Storage": "7.2.4",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "8.0.10"
         },
         "runtime": {
           "lib/net8.0/Duende.IdentityServer.dll": {
-            "assemblyVersion": "7.2.3.0",
-            "fileVersion": "7.2.3.0"
+            "assemblyVersion": "7.2.4.0",
+            "fileVersion": "7.2.4.0"
           }
         }
       },
       "Duende.IdentityServer.EntityFramework/7.2.3": {
         "dependencies": {
-          "Duende.IdentityServer": "7.2.3",
+          "Duende.IdentityServer": "7.2.4",
           "Duende.IdentityServer.EntityFramework.Storage": "7.2.3"
         },
         "runtime": {
@@ -51,7 +51,7 @@
       },
       "Duende.IdentityServer.EntityFramework.Storage/7.2.3": {
         "dependencies": {
-          "Duende.IdentityServer.Storage": "7.2.3",
+          "Duende.IdentityServer.Storage": "7.2.4",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.10"
         },
         "runtime": {
@@ -61,15 +61,15 @@
           }
         }
       },
-      "Duende.IdentityServer.Storage/7.2.3": {
+      "Duende.IdentityServer.Storage/7.2.4": {
         "dependencies": {
           "Duende.IdentityModel": "7.0.0",
           "Microsoft.AspNetCore.DataProtection.Abstractions": "8.0.10"
         },
         "runtime": {
           "lib/net8.0/Duende.IdentityServer.Storage.dll": {
-            "assemblyVersion": "7.2.3.0",
-            "fileVersion": "7.2.3.0"
+            "assemblyVersion": "7.2.4.0",
+            "fileVersion": "7.2.4.0"
           }
         }
       },
@@ -358,12 +358,12 @@
       "path": "duende.identitymodel/7.0.0",
       "hashPath": "duende.identitymodel.7.0.0.nupkg.sha512"
     },
-    "Duende.IdentityServer/7.2.3": {
+    "Duende.IdentityServer/7.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kwX4C7CUxKeoX669GNnl8jmawBiV4QK8bx+lFW+ZHKHaqhgULsodHfMkL6hKyz8ANAWHcxAURCro69cdR+6bOA==",
-      "path": "duende.identityserver/7.2.3",
-      "hashPath": "duende.identityserver.7.2.3.nupkg.sha512"
+      "sha512": "sha512-esRxAtRJkB/F8t0rwT4JB40EAJt2EfIltyAon4ETRuRS/wtKzvGK9bDYD43zUhD4DFT8pQr0c7G5MuZdbwCD5w==",
+      "path": "duende.identityserver/7.2.4",
+      "hashPath": "duende.identityserver.7.2.4.nupkg.sha512"
     },
     "Duende.IdentityServer.EntityFramework/7.2.3": {
       "type": "package",
@@ -379,12 +379,12 @@
       "path": "duende.identityserver.entityframework.storage/7.2.3",
       "hashPath": "duende.identityserver.entityframework.storage.7.2.3.nupkg.sha512"
     },
-    "Duende.IdentityServer.Storage/7.2.3": {
+    "Duende.IdentityServer.Storage/7.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QVm8vEp1D/vT7WlsSyE4+PwSj5FK0BqhpqCvvvQtoyqNb+18MMevpXJ6+XkplBwZcGY8SYpGgwabehxg6ylrXQ==",
-      "path": "duende.identityserver.storage/7.2.3",
-      "hashPath": "duende.identityserver.storage.7.2.3.nupkg.sha512"
+      "sha512": "sha512-u8qF7ZRTatlew3j3rJBNPSHI0qWnVkG93DBtYbKEeQrGBpKmVLcIdKo6ajdH4g1sGuPvMQUFvlYfdkiDAt2Kpg==",
+      "path": "duende.identityserver.storage/7.2.4",
+      "hashPath": "duende.identityserver.storage.7.2.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.10": {
       "type": "package",

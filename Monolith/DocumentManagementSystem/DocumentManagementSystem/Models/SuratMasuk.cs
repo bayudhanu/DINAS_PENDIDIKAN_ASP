@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Components.Forms;
 
 namespace DocumentManagementSystem.Models
 {
@@ -7,51 +9,52 @@ namespace DocumentManagementSystem.Models
         [Key]
         public int Id { get; set; }
 
-        [Required]
-        [StringLength(50)]
+        [Required(ErrorMessage = "Nomor surat wajib diisi")]
         [Display(Name = "Nomor Surat")]
         public string NomorSurat { get; set; }
 
-        [Required]
-        [StringLength(200)]
+        [Required(ErrorMessage = "Perihal wajib diisi")]
         public string Perihal { get; set; }
 
-        [Required]
-        [Display(Name = "Isi Surat")]
-        public string IsiSurat { get; set; }
+        public string? IsiSurat { get; set; } = null;
 
-        [Required]
-        [DataType(DataType.Date)]
+        [Required(ErrorMessage = "Sifat surat wajib dipilih")]
+        [Display(Name = "Sifat Surat")]
+        public string SifatSurat { get; set; } // Biasa, Penting, Rahasia
+
+        [Required(ErrorMessage = "Pengirim wajib diisi")]
+        public string Pengirim { get; set; }
+
+        [Required(ErrorMessage = "Tanggal surat wajib diisi")]
         [Display(Name = "Tanggal Surat")]
         public DateTime TanggalSurat { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        [Display(Name = "Asal Surat")]
-        public string AsalSurat { get; set; }
+        [Required(ErrorMessage = "Tanggal diterima wajib diisi")]
+        [Display(Name = "Tanggal Diterima")]
+        public DateTime TanggalDiterima { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        [Display(Name = "Tujuan Surat")]
-        public string TujuanSurat { get; set; }
-
-        [Display(Name = "Lampiran")]
-        public string LampiranPath { get; set; }
-
-        [Required]
-        [Display(Name = "Status Surat")]
+        public string? Keterangan { get; set; }
         public StatusSurat Status { get; set; } = StatusSurat.Diterima;
 
-        [Display(Name = "Tanggal Diterima")]
-        public DateTime TanggalDiterima { get; set; } = DateTime.Now;
+        [Display(Name = "File Surat")]
+        public string? FilePath { get; set; }
 
-        [StringLength(200)]
-        [Display(Name = "Keterangan")]
-        public string Keterangan { get; set; }
+        [NotMapped]
+        [Display(Name = "Upload File")]
+        public IFormFile? FileSurat { get; set; }
 
-        [StringLength(50)]
-        [Display(Name = "Sifat Surat")]
-        public string SifatSurat { get; set; }
+        [NotMapped]
+        public Stream? FileSuratStream { get; set; } // New property to hold the file stream
+
+        [NotMapped]
+        public string? FileSuratName { get; set; } // New property to hold the file name
+
+        // Untuk tracking
+        public string? CreatedBy { get; set; }
+        public DateTime CreatedDate { get; set; } = DateTime.Now;
+        public string? ModifiedBy { get; set; }
+        public DateTime? ModifiedDate { get; set; }
+        
     }
 
     public enum StatusSurat

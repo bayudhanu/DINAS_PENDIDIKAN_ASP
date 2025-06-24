@@ -1,5 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+  
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
+	
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
@@ -10,6 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DinasPendidikan.Client\DinasPendidikan.Client.csproj" />
     <ProjectReference Include="..\Identity.ApiService\Identity.ApiService.csproj" />
     <ProjectReference Include="..\DinasPendidikan.Web\DinasPendidikan.Web.csproj" />
     <ProjectReference Include="..\DinasPendidikan.ApiService\DinasPendidikan.ApiService.csproj" />
@@ -20,7 +23,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.2" />
+    <PackageReference Include="Aspire.Hosting" Version="9.3.01" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.NodeJs" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.Orchestration.linux-x64" Version="9.3.1" />
+    <PackageReference Include="EnvDTE" Version="17.14.40260" />
+    <PackageReference Include="envdte80" Version="17.14.40260" />
   </ItemGroup>
 
 </Project>

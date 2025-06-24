@@ -1,0 +1,34 @@
+.layout-main-container {
+    // display: flex;
+    // flex-direction: column;
+    position: relative;
+    // min-height: 100vh;
+    height: calc(100vh - 5rem);
+    // justify-content: space-between;
+    overflow-y: auto;
+    top: 5rem;
+    padding: 2rem; /* Original 7rem 2rem 2rem 4rem */
+    // transition: margin-left $transitionDuration;
+    scrollbar-width: thin !important;
+}
+
+/*
+.layout-main-container {
+    min-width: 80%;
+    position: fixed;
+    height: calc(100vh - 5.1rem);
+    overflow-y: auto;
+    user-select: none;
+    top: 5.1rem;
+    transition: transform $transitionDuration, left $transitionDuration;
+    background-color: var(--surface-overlay);
+    border-radius: $borderRadius;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+*/
+
+.layout-main {
+    flex: 1 1 auto;
+}

@@ -2,5 +2,6 @@
 {
     public class SuratKeluar
     {
+        public int Id { get; set; }
     }
 }

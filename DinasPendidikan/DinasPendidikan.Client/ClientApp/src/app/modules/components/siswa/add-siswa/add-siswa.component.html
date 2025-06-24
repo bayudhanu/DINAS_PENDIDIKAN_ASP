@@ -1,0 +1,403 @@
+<!-- begin :: Halaman Tambah Siswa -->
+<!-- begin :: Tombol Tambah Siswa -->
+<p-button (onClick)="dialogAddSiswa()" icon="pi pi-plus" label="Tambah" [outlined]="true" severity="outlineCustomGrayBlueButton" />
+<!-- end :: Tombol Tambah Siswa -->
+
+<!-- begin :: Dialog Tambah Siswa -->
+<p-dialog 
+    header="TAMBAH SISWA" 
+    [(visible)]="visible" 
+    [modal]="true"
+    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+    [style]="{ width: '75vw' }"
+    [draggable]="false"
+    [resizable]="false">
+    
+    <!-- begin :: Konten Dialog -->
+    <div class="flex">
+        <!-- begin :: Kolom Kiri : Tab Data Siswa (Data Pribadi, Data Keluarga, Data Sekolah dan Data KIP) -->
+        <div class="col-9 pt-3 p-0">
+            <!-- begin :: Tab Data Siswa (Data Pribadi, Data Keluarga, Data Sekolah dan Data KIP) -->
+            <p-tabView>
+                <!-- begin :: Data Pribadi -->
+                <p-tabPanel header="Data Pribadi">
+                    <div class="customTabPanelContainer customBorderBottomGray">
+                        <div class="p-fluid p-formgrid grid">
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nama">Nama Siswa<span class="p-error">*</span></label>
+                                <input pinputtext="" id="nama" type="text" class="p-inputtext customInputText" placeholder="Tulis nama lengkap siswa" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="jenisKelamin">Jenis Kelamin<span class="p-error">*</span></label>
+                                <p-dropdown [options]="dropdownJenisKelamin" [(ngModel)]="selectedJenisKelamin" [showClear]="true" optionLabel="name" placeholder="Pilih jenis kelamin" appendTo="body" ></p-dropdown>
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="tempatLahir">Tempat Lahir<span class="p-error">*</span></label>
+                                <input pinputtext="" id="tempatLahir" type="text" class="p-inputtext customInputText" placeholder="Tulis tempat lahir" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="tanggalLahir">Tanggal Lahir<span class="p-error">*</span></label>
+                                <input pinputtext="" id="tanggalLahir" type="date" class="p-inputtext customInputText" placeholder="Pilih tanggal lahir" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="alamat">Alamat<span class="p-error">*</span></label>
+                                <input pinputtext="" id="alamat" type="text" class="p-inputtext customInputText" placeholder="Tulis alamat tempat tinggal siswa" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="jarakRumah">Jarak Rumah<span class="p-error">*</span></label>
+                                <input pinputtext="" id="jarakRumah" type="text" class="p-inputtext customInputText" placeholder="Tulis jarak rumah ke sekolah (km)" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="agama">Agama<span class="p-error">*</span></label>
+                                <p-dropdown [options]="dropdownAgama" [(ngModel)]="selectedAgama" [showClear]="true" optionLabel="name" placeholder="Pilih agama" appendTo="body" ></p-dropdown>
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="noHp">No. Handphone</label>
+                                <input pinputtext="" id="noHp" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor handphone" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="email">Email</label>
+                                <input pinputtext="" id="email" type="text" class="p-inputtext customInputText" placeholder="Tulis email" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customTabPanelContainer">
+                        <div class="p-fluid p-formgrid grid">
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="anakKeberapa">Anak Keberapa<span class="p-error">*</span></label>
+                                <input pinputtext="" id="anakKeberapa" type="text" class="p-inputtext customInputText" placeholder="Tulis anak keberapa" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="jumlahSaudaraKandung">Jml. Saudara Kandung<span class="p-error">*</span></label>
+                                <input pinputtext="" id="jumlahSaudaraKandung" type="text" class="p-inputtext customInputText" placeholder="Tulis jumlah saudara kandung" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="tinggiBadan">Tinggi Badan</label>
+                                <input pinputtext="" id="tinggiBadan" type="text" class="p-inputtext customInputText" placeholder="Tulis tinggi badan (cm)" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="beratBadan">Berat Badan</label>
+                                <input pinputtext="" id="beratBadan" type="text" class="p-inputtext customInputText" placeholder="Tulis berat badan (kg)" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="lingkarKepala">Lingkar Kepala</label>
+                                <input pinputtext="" id="lingkarKepala" type="text" class="p-inputtext customInputText" placeholder="Tulis lingkar kepala (cm)" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="kebutuhanKhusus">Kebutuhan Khusus</label>
+                                <input pinputtext="" id="kebutuhanKhusus" type="text" class="p-inputtext customInputText" placeholder="Tulis kebutuhan khusus" >
+                            </div>
+                        </div>
+                    </div>
+                </p-tabPanel>
+                <!-- end :: Data Pribadi -->
+                 
+                <!-- begin :: Data Keluarga -->
+                <p-tabPanel header="Data Keluarga">
+                    <!-- begin :: Data Ayah -->
+                    <div class="customTabPanelContainer customBorderBottomGray">
+                        <div class="p-fluid p-formgrid grid">
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="namaAyah">Nama Ayah<span class="p-error">*</span></label>
+                                <input pinputtext="" id="namaAyah" type="text" class="p-inputtext customInputText" placeholder="Tulis nama ayah" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nikAyah">NIK Ayah<span class="p-error">*</span></label>
+                                <input pinputtext="" id="nikAyah" type="text" class="p-inputtext customInputText" placeholder="Tulis nik ayah" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="tanggalLahirAyah">Tanggal Lahir Ayah<span class="p-error">*</span></label>
+                                <input pinputtext="" id="tanggalLahirAyah" type="date" class="p-inputtext customInputText" placeholder="Pilih tanggal lahir" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="jenjangPendidikanAyah">Jenjang Pendidikan Ayah<span class="p-error">*</span></label>
+                                <p-dropdown [options]="dropdownJenjangPendidikan" [(ngModel)]="selectedJenjangPendidikan" [showClear]="true" optionLabel="name" placeholder="Pilih jenjang pendidikan" appendTo="body" ></p-dropdown>
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="pekerjaanAyah">Pekerjaan Ayah<span class="p-error">*</span></label>
+                                <input pinputtext="" id="pekerjaanAyah" type="text" class="p-inputtext customInputText" placeholder="Tulis pekerjaan ayah" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="penghasilanAyah">Penghasilan Ayah<span class="p-error">*</span></label>
+                                <input pinputtext="" id="penghasilanAyah" type="text" class="p-inputtext customInputText" placeholder="Tulis penghasilan ayah" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="alamatAyah">Alamat Ayah<span class="p-error">*</span></label>
+                                <input pinputtext="" id="alamatAyah" type="text" class="p-inputtext customInputText" placeholder="Tulis alamat tempat tinggal ayah" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="noHpAyah">No. Handphone Ayah<span class="p-error">*</span></label>
+                                <input pinputtext="" id="noHpAyah" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor handphone ayah" >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end :: Data Ayah -->
+
+                    <!-- begin :: Data Ibu -->
+                    <div class="customTabPanelContainer customBorderBottomGray">
+                        <div class="p-fluid p-formgrid grid">
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="namaAyah">Nama Ibu<span class="p-error">*</span></label>
+                                <input pinputtext="" id="namaIbu" type="text" class="p-inputtext customInputText" placeholder="Tulis nama ibu" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nikIbu">NIK Ibu<span class="p-error">*</span></label>
+                                <input pinputtext="" id="nikIbu" type="text" class="p-inputtext customInputText" placeholder="Tulis nik ibu" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="tanggalLahirIbu">Tanggal Lahir Ibu<span class="p-error">*</span></label>
+                                <input pinputtext="" id="tanggalLahirIbu" type="date" class="p-inputtext customInputText" placeholder="Pilih tanggal lahir" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="jenjangPendidikanIbu">Jenjang Pendidikan Ibu<span class="p-error">*</span></label>
+                                <p-dropdown [options]="dropdownJenjangPendidikan" [(ngModel)]="selectedJenjangPendidikan" [showClear]="true" optionLabel="name" placeholder="Pilih jenjang pendidikan" appendTo="body" ></p-dropdown>
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="pekerjaanIbu">Pekerjaan Ibu<span class="p-error">*</span></label>
+                                <input pinputtext="" id="pekerjaanIbu" type="text" class="p-inputtext customInputText" placeholder="Tulis pekerjaan ibu" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="penghasilanIbu">Penghasilan Ibu<span class="p-error">*</span></label>
+                                <input pinputtext="" id="penghasilanIbu" type="text" class="p-inputtext customInputText" placeholder="Tulis penghasilan ibu" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="alamatIbu">Alamat Ibu<span class="p-error">*</span></label>
+                                <input pinputtext="" id="alamatIbu" type="text" class="p-inputtext customInputText" placeholder="Tulis alamat tempat tinggal ibu" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="noHpIbu">No. Handphone Ibu<span class="p-error">*</span></label>
+                                <input pinputtext="" id="noHpIbu" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor handphone ibu" >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end :: Data Ibu -->
+
+                    <!-- begin :: Data Wali -->
+                    <div class="customTabPanelContainer">
+                        <div class="p-fluid p-formgrid grid">
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="namaWali">Nama Wali</label>
+                                <input pinputtext="" id="namaWali" type="text" class="p-inputtext customInputText" placeholder="Tulis nama wali" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nikWali">NIK Wali</label>
+                                <input pinputtext="" id="nikWali" type="text" class="p-inputtext customInputText" placeholder="Tulis nik wali" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="tanggalLahirWali">Tanggal Lahir Wali</label>
+                                <input pinputtext="" id="tanggalLahirWali" type="date" class="p-inputtext customInputText" placeholder="Pilih tanggal lahir" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="jenjangPendidikanWali">Jenjang Pendidikan Wali</label>
+                                <p-dropdown [options]="dropdownJenjangPendidikan" [(ngModel)]="selectedJenjangPendidikan" [showClear]="true" optionLabel="name" placeholder="Pilih jenjang pendidikan" appendTo="body" ></p-dropdown>
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="pekerjaanWali">Pekerjaan Wali</label>
+                                <input pinputtext="" id="pekerjaanWali" type="text" class="p-inputtext customInputText" placeholder="Tulis pekerjaan wali" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="penghasilanWali">Penghasilan Wali</label>
+                                <input pinputtext="" id="penghasilanWali" type="text" class="p-inputtext customInputText" placeholder="Tulis penghasilan wali" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="alamatWali">Alamat Wali</label>
+                                <input pinputtext="" id="alamatWali" type="text" class="p-inputtext customInputText" placeholder="Tulis alamat tempat tinggal wali" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="noHpWali">No. Handphone Wali</label>
+                                <input pinputtext="" id="noHpWali" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor handphone wali" >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end :: Data Wali -->
+                </p-tabPanel>
+                <!-- end :: Data Keluarga -->
+                    
+                <!-- begin :: Data Sekolah -->
+                <p-tabPanel header="Data Sekolah">
+                    <div class="customTabPanelContainer customBorderBottomGray">
+                        <div class="p-fluid p-formgrid grid">
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nis">NIS<span class="p-error">*</span></label>
+                                <input pinputtext="" id="nis" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor induk siswa" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nisn">NISN<span class="p-error">*</span></label>
+                                <input pinputtext="" id="nisn" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor induk siswa nasional" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="sekolahAsal">Sekolah Asal</label>
+                                <input pinputtext="" id="sekolahAsal" type="text" class="p-inputtext customInputText" placeholder="Tulis sekolah asal" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="unitSekolah">Unit Sekolah<span class="p-error">*</span></label>
+                                <p-dropdown [options]="dropdownUnitSekolah" [(ngModel)]="selectedUnitSekolah" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true" appendTo="body" placeholder="Pilih unit sekolah">
+                                    <ng-template pTemplate="selectedItem">
+                                        <div class="flex align-items-center gap-2" *ngIf="selectedUnitSekolah">
+                                            <div>{{ selectedUnitSekolah.name }}</div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template let-unitSekolah pTemplate="item">
+                                        <div class="flex align-items-center gap-2">
+                                            <div>{{ unitSekolah.name }}</div>
+                                        </div>
+                                    </ng-template>
+                                </p-dropdown>
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="kelas">Kelas<span class="p-error">*</span></label>
+                                <p-dropdown [options]="dropdownKelas" [(ngModel)]="selectedKelas" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true" appendTo="body" placeholder="Pilih kelas">
+                                    <ng-template pTemplate="selectedItem">
+                                        <div class="flex align-items-center gap-2" *ngIf="selectedKelas">
+                                            <div>{{ selectedKelas.name }}</div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template let-kelas pTemplate="item">
+                                        <div class="flex align-items-center gap-2">
+                                            <div>{{ kelas.name }}</div>
+                                        </div>
+                                    </ng-template>
+                                </p-dropdown>
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="rombelSaatIni">Rombel Saat Ini</label>
+                                <p-dropdown [options]="dropdownRombelSaatIni" [(ngModel)]="selectedRombelSaatIni" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true" appendTo="body" placeholder="Pilih rombel saat ini">
+                                    <ng-template pTemplate="selectedItem">
+                                        <div class="flex align-items-center gap-2" *ngIf="selectedRombelSaatIni">
+                                            <div>{{ selectedRombelSaatIni.name }}</div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template let-rombelSaatIni pTemplate="item">
+                                        <div class="flex align-items-center gap-2">
+                                            <div>{{ rombelSaatIni.name }}</div>
+                                        </div>
+                                    </ng-template>
+                                </p-dropdown>
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nomorPesertaUjianNasional">No. Peserta Ujian Nasional</label>
+                                <input pinputtext="" id="nomorPesertaUjianNasional" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor peserta ujian nasional" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nomorSeriIjazah">No. Seri Ijazah</label>
+                                <input pinputtext="" id="nomorSeriIjazah" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor seri ijazah" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nomorSkhun">No. SKHUN</label>
+                                <input pinputtext="" id="nomorSkhun" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor SKHUN" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customTabPanelContainer">
+                        <div class="p-fluid p-formgrid grid">
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="password">Password</label>
+                                <p-password [(ngModel)]="password" [toggleMask]="true" [feedback]="false" placeholder="Tulis password"></p-password>
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="konfirmasiPassword">Konfirmasi Password</label>
+                                <p-password [(ngModel)]="konfirmasiPassword" [toggleMask]="true" [feedback]="false" placeholder="Tulis konfirmasi password"></p-password>
+                            </div>
+                        </div>
+                    </div>
+                </p-tabPanel>
+                <!-- end :: Data Sekolah -->
+
+                <!-- begin :: Data KIP -->
+                <p-tabPanel header="Data KIP">
+                    <div class="customTabPanelContainer">
+                        <div class="p-fluid p-formgrid grid">
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nomorKip">No. KIP</label>
+                                <input pinputtext="" id="nomorKip" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor KIP" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="namaKip">Nama KIP</label>
+                                <input pinputtext="" id="namaKip" type="text" class="p-inputtext customInputText" placeholder="Tulis nama KIP" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nomorKks">No. KKS</label>
+                                <input pinputtext="" id="nomorKks" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor KKS" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nomorAktaLahir">No. Akta Lahir</label>
+                                <input pinputtext="" id="nomorAktaLahir" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor akta lahir" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="namaBank">Nama Bank</label>
+                                <input pinputtext="" id="namaBank" type="text" class="p-inputtext customInputText" placeholder="Tulis nama bank" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="nomorRekeningBank">No. Rekening Bank</label>
+                                <input pinputtext="" id="nomorRekeningBank" type="text" class="p-inputtext customInputText" placeholder="Tulis nomor rekening bank" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="rekeningAtasNama">Rekening Atas Nama</label>
+                                <input pinputtext="" id="rekeningAtasNama" type="text" class="p-inputtext customInputText" placeholder="Tulis rekening atas nama" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="layakPip">Layak PIP</label>
+                                <input pinputtext="" id="layakPip" type="text" class="p-inputtext customInputText" placeholder="Tulis layak PIP" >
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlfor="alasanLayakPip">Alasan Layak PIP</label>
+                                <input pinputtext="" id="alasanLayakPip" type="text" class="p-inputtext customInputText" placeholder="Tulis alasan layak PIP" >
+                            </div>
+                        </div>
+                    </div>
+                </p-tabPanel>
+                <!-- end :: Data KIP -->
+            </p-tabView>
+            <!-- end :: Tab Data Siswa (Data Pribadi, Data Keluarga, Data Sekolah dan Data KIP) -->
+        </div>
+        <!-- end :: Kolom Kiri : Tab Data Siswa (Data Pribadi, Data Keluarga, Data Sekolah dan Data KIP) -->
+        
+        <!-- begin :: Kolom Kanan : Status Siswa dan Foto Siswa -->
+        <div class="col-3 pt-2 p-0 customBorderLeftGray">
+            <div class="customTabPanelContainer">
+                <div class="p-fluid p-formgrid grid">
+                    <div class="field col-12">
+                        <label htmlfor="statusSiswa" class="font-semibold mb-3">Status Siswa<span class="p-error">*</span></label>
+                        <div *ngFor="let status of statusSiswa" class="field-checkbox">
+                            <p-radioButton [inputId]="status.key" name="status" [value]="status" [(ngModel)]="selectedStatus" />
+                            <label [for]="status.key" class="ml-2">
+                                {{ status.name }}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field col-12">
+                        <label htmlfor="foto" class="font-semibold mb-3">Foto Siswa<span class="p-error">*</span></label>
+                        <p-toast></p-toast>
+                        <p-fileUpload name="fotoSiswa[]" chooseIcon="false" chooseLabel="Pilih Foto" [showUploadButton]="false" [showCancelButton]="false" (onUpload)="onUpload($event)" [multiple]="false" accept="image/*" [maxFileSize]="1000000">
+                            <ng-template pTemplate="content">
+                                <ul *ngIf="uploadedFiles.length">
+                                    <li *ngFor="let file of uploadedFiles">{{ file.name }} - {{ file.size }} bytes</li>
+                                </ul>
+                            </ng-template>
+                        </p-fileUpload>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end :: Kolom Kanan : Status Siswa dan Foto Siswa -->
+    </div>
+    <!-- end :: Konten Dialog -->
+
+    <!-- begin :: Footer Dialog -->
+    <ng-template pTemplate="footer">
+        <p-button 
+            label="Kembali" 
+            [outlined]="true" 
+            severity="blockCustomGrayButton" 
+            (onClick)="visible = false" 
+            class="mr-2" />
+        <p-button 
+            label="Simpan" 
+            [outlined]="true" 
+            severity="blockCustomBlueButton" 
+            (onClick)="visible = false" />
+    </ng-template>
+    <!-- end :: Footer Dialog -->
+</p-dialog>
+<!-- end :: Dialog Tambah Siswa -->
+<!-- end :: Halaman Tambah Siswa -->

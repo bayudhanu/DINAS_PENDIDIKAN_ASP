@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\documentmanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\documentmanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\models\\suratmasuk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\models\\suratmasuk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\components\\pages\\suratmasuk\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\components\\pages\\suratmasuk\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\components\\pages\\suratmasuk\\formsuratmasuk.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\components\\pages\\suratmasuk\\formsuratmasuk.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\components\\pages\\suratmasuk\\daftarsuratmasuk.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\components\\pages\\suratmasuk\\daftarsuratmasuk.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\components\\pages\\suratmasuk\\component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\components\\pages\\suratmasuk\\component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\services\\isuratmasukservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\services\\isuratmasukservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\repositories\\suratmasukrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\repositories\\suratmasukrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|d:\\github\\dinas_pendidikan_asp\\monolith\\documentmanagementsystem\\documentmanagementsystem\\documentmanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6097E4A7-AC4F-4440-BF28-08683F49FC0E}|DocumentManagementSystem\\DocumentManagementSystem.csproj|solutionrelative:documentmanagementsystem\\documentmanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DocumentManagementSystem",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\DocumentManagementSystem.csproj",
-              "RelativeDocumentMoniker": "DocumentManagementSystem\\DocumentManagementSystem.csproj",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\DocumentManagementSystem.csproj",
-              "RelativeToolTip": "DocumentManagementSystem\\DocumentManagementSystem.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-01T14:25:39.188Z",
+              "DocumentIndex": 1,
+              "Title": "SuratMasuk.cs",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Models\\SuratMasuk.cs",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\Models\\SuratMasuk.cs",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Models\\SuratMasuk.cs",
+              "RelativeToolTip": "DocumentManagementSystem\\Models\\SuratMasuk.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T17:26:04.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\appsettings.json",
-              "RelativeDocumentMoniker": "DocumentManagementSystem\\appsettings.json",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\appsettings.json",
-              "RelativeToolTip": "DocumentManagementSystem\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-01T14:24:55.723Z",
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "DocumentManagementSystem\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:25:32.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FormSuratMasuk.razor",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\FormSuratMasuk.razor",
-              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\FormSuratMasuk.razor",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\FormSuratMasuk.razor",
-              "RelativeToolTip": "DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\FormSuratMasuk.razor",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\Routes.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Routes.razor",
+              "RelativeToolTip": "DocumentManagementSystem\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-01T14:23:06.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ISuratMasukService.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Services\\ISuratMasukService.cs",
-              "RelativeDocumentMoniker": "DocumentManagementSystem\\Services\\ISuratMasukService.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Services\\ISuratMasukService.cs",
-              "RelativeToolTip": "DocumentManagementSystem\\Services\\ISuratMasukService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T14:18:48.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Program.cs",
-              "RelativeDocumentMoniker": "DocumentManagementSystem\\Program.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Program.cs",
-              "RelativeToolTip": "DocumentManagementSystem\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAACkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T14:17:54.04Z",
+              "WhenOpened": "2025-06-23T17:25:27.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DaftarSuratMasuk.razor",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\DaftarSuratMasuk.razor",
-              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\DaftarSuratMasuk.razor",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\DaftarSuratMasuk.razor",
-              "RelativeToolTip": "DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\DaftarSuratMasuk.razor",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Title": "Dashboard.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\Dashboard.razor",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\Pages\\Dashboard.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\Dashboard.razor",
+              "RelativeToolTip": "DocumentManagementSystem\\Components\\Pages\\Dashboard.razor",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-01T14:17:36.897Z",
+              "WhenOpened": "2025-06-23T17:25:23.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Error.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\Pages\\Error.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "DocumentManagementSystem\\Components\\Pages\\Error.razor",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:25:20.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "SuratMasukRepository.cs",
-              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Repositories\\SuratMasukRepository.cs",
-              "RelativeDocumentMoniker": "DocumentManagementSystem\\Repositories\\SuratMasukRepository.cs",
-              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Repositories\\SuratMasukRepository.cs",
-              "RelativeToolTip": "DocumentManagementSystem\\Repositories\\SuratMasukRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T14:16:46.977Z",
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "DocumentManagementSystem\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:25:18.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormSuratMasuk.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\FormSuratMasuk.razor",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\FormSuratMasuk.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\FormSuratMasuk.razor",
+              "RelativeToolTip": "DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\FormSuratMasuk.razor",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:24:32.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Component.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\Component.razor",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\Component.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\Component.razor",
+              "RelativeToolTip": "DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\Component.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:24:28.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\Index.razor",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\Index.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\Index.razor",
+              "RelativeToolTip": "DocumentManagementSystem\\Components\\Pages\\SuratMasuk\\Index.razor",
+              "ViewState": "AgIAAAECAAAAAAAAAAAAAHIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:23:51.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DocumentManagementSystem",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\DocumentManagementSystem.csproj",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\DocumentManagementSystem.csproj",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\DocumentManagementSystem.csproj",
+              "RelativeToolTip": "DocumentManagementSystem\\DocumentManagementSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-23T17:06:33.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\App.razor",
+              "RelativeDocumentMoniker": "DocumentManagementSystem\\Components\\App.razor",
+              "ToolTip": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\Monolith\\DocumentManagementSystem\\DocumentManagementSystem\\Components\\App.razor",
+              "RelativeToolTip": "DocumentManagementSystem\\Components\\App.razor",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T16:58:17.815Z",
               "EditorCaption": ""
             }
           ]

@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "gKaxHABG/EI=",
+  "dgSpecHash": "jamAjUeW88o=",
   "success": true,
   "projectFilePath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\Identity.ApiService\\Identity.ApiService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUST\\.nuget\\packages\\duende.identitymodel\\7.0.0\\duende.identitymodel.7.0.0.nupkg.sha512",
-    "C:\\Users\\ASUST\\.nuget\\packages\\duende.identityserver\\7.2.3\\duende.identityserver.7.2.3.nupkg.sha512",
+    "C:\\Users\\ASUST\\.nuget\\packages\\duende.identityserver\\7.2.4\\duende.identityserver.7.2.4.nupkg.sha512",
     "C:\\Users\\ASUST\\.nuget\\packages\\duende.identityserver.entityframework\\7.2.3\\duende.identityserver.entityframework.7.2.3.nupkg.sha512",
     "C:\\Users\\ASUST\\.nuget\\packages\\duende.identityserver.entityframework.storage\\7.2.3\\duende.identityserver.entityframework.storage.7.2.3.nupkg.sha512",
-    "C:\\Users\\ASUST\\.nuget\\packages\\duende.identityserver.storage\\7.2.3\\duende.identityserver.storage.7.2.3.nupkg.sha512",
+    "C:\\Users\\ASUST\\.nuget\\packages\\duende.identityserver.storage\\7.2.4\\duende.identityserver.storage.7.2.4.nupkg.sha512",
     "C:\\Users\\ASUST\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\8.0.10\\microsoft.aspnetcore.authentication.openidconnect.8.0.10.nupkg.sha512",
     "C:\\Users\\ASUST\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\8.0.10\\microsoft.aspnetcore.dataprotection.abstractions.8.0.10.nupkg.sha512",
     "C:\\Users\\ASUST\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.16\\microsoft.aspnetcore.openapi.8.0.16.nupkg.sha512",

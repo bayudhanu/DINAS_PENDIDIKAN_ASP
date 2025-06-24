@@ -1,0 +1,22 @@
+<p-splitButton icon="pi pi-bars" label="Option" [model]="dropdownOptionButton" appendTo="body" styleClass="outlineCustomGrayBlueSplitButton ml-2"></p-splitButton>
+<p-dialog
+    header="Upload File Kelas"
+    [(visible)]="isDialogOpen"
+    [modal]="true"
+    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [style]="{ width: '50vw' }" [draggable]="false"
+    [resizable]="false">
+    <p-fileUpload
+        name="file"
+        url="{{URL}}"
+        (onUpload)="onUpload($event)"
+        [multiple]="false"
+        [auto]="false"
+        accept=".xls, .xlsx"
+        [maxFileSize]="1000000">
+        <ng-template pTemplate="content">
+            <ul *ngIf="uploadFiles.length">
+                <li *ngFor="let uploadFile of uploadFiles">{{uploadFile.createdDate}}, File {{uploadFile.file.name}} - {{uploadFile.file.size}} bytes has been sucessfully upload.</li>
+            </ul>
+        </ng-template>
+    </p-fileUpload>
+</p-dialog>
