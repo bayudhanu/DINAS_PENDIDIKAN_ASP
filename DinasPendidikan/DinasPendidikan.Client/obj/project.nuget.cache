@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "NtIqYxThyAU=",
+  "success": true,
+  "projectFilePath": "D:\\Github\\DINAS_PENDIDIKAN_ASP\\DinasPendidikan\\DinasPendidikan.Client\\DinasPendidikan.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUST\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\9.0.6\\microsoft.aspnetcore.spaservices.extensions.9.0.6.nupkg.sha512",
+    "C:\\Users\\ASUST\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.6\\microsoft.extensions.fileproviders.abstractions.9.0.6.nupkg.sha512",
+    "C:\\Users\\ASUST\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\9.0.6\\microsoft.extensions.fileproviders.physical.9.0.6.nupkg.sha512",
+    "C:\\Users\\ASUST\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\9.0.6\\microsoft.extensions.filesystemglobbing.9.0.6.nupkg.sha512",
+    "C:\\Users\\ASUST\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.6\\microsoft.extensions.primitives.9.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
